@@ -5,7 +5,7 @@ Files, code, and other cool stuff from my LITA 2017 presentation: Take your Goog
 
 Please have a Google account and if you have a laptop, please bring it.
 
-**Table of Contents for this Document**
+**Table of Contents for the session**
 
 - [Lesson 1](#lesson-1)
 - [Lesson 2](#lesson-2)
