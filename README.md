@@ -5,8 +5,6 @@ Files, code, and other cool stuff from my LITA 2017 presentation: Take your Goog
 
 Please have a Google account and if you have a laptop, please bring it.
 
-<iframe src="https://todaysmeet.com/room/3077031/embed?type=live&hide_ui=0" height="400" width="100%"></iframe>
-
 **Table of Contents for the session**
 
 - [Lesson 1](#lesson-1)
