@@ -14,8 +14,7 @@ Please have a Google account and if you have a laptop, please bring it.
 - [Lesson 5](#lesson-5)
 
 
-## Lesson 1
-### Getting into Google Apps Script
+## Lesson 1 - Getting into Google Apps Script
 
 **Description:** Here is the description of the lesson. 
 
