@@ -17,7 +17,15 @@ Please have a Google account and if you have a laptop, please bring it.
 ## Lesson 1
 ### Getting into Google Apps Script
 
-Test content
+**Description:** Here is the description of the lesson. 
+
+**Objective(s):** Here are the objectives for the lesson
+
+**Starter template:** https://todaysmeet.com/
+
+**Final version of the lesson code/file:** https://todaysmeet.com/)
+
+**Help:** [chat here](https://todaysmeet.com/)
 
 ## Lesson 2
 
