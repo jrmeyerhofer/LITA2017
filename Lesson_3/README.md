@@ -9,16 +9,33 @@ In this lesson we'll create a custom menu and a clickable button in a Google She
 3. Click on Tools menu and choose Script Editor. 
 4. Copy in this code overwriting everything that is there:
 ```javascript
-function addCooltoString(input) {
-   return input + " is cool";
+function onOpen() {
+  var ui = SpreadsheetApp.getUi();
+  // Or DocumentApp or FormApp.
+  ui.createMenu('Our Custom Menu')
+      .addItem('First Menu', 'menuOne')
+      .addSeparator()
+      .addSubMenu(ui.createMenu('SubMenu')
+          .addItem('Second Menu', 'menuTwo'))
+      .addToUi();
+}
+
+function menuOne() {
+  SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
+     .alert('You clicked the first menu item!');
+}
+
+function menuTwo() {
+  SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
+     .alert('You clicked the second menu item!');
 }
 ```
 5. Save and name your script. This code will add a custom menu to our sheet. 
 6. Manually run the XXXXX function. If you look at your sheet, you will now have a new menu.
-IMAGE
+![Image of Menu](custom_menu.png)
 
 click on menu and it runs the appropriate funtion:
-IMAGE
+![Image of Popup](popup.png)
 
 
 
