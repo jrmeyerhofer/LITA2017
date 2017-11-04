@@ -6,7 +6,7 @@ In this lesson we'll talk about what Google Apps Script (GAS) is, create our fir
 
 Allows you to create add-ons for Google Sheets, Docs, Slides, or Forms, automate your workflow, integrate with external APIs, and more. It is JavaScript "like" and doesn’t need to be compiled. Because it's built into Google, you don't have to worry about hosting, backups, security, patching your server/application, or uploading files to a server.
 
-What can you do? Add a menu to a sheet, build a stand-alone application, or create a container bound application in a Google Sheet or Docs. You can also run a GAS application as a web service - independ from interfaces - that can be called from elsewhwere on the web.
+What can you do? Add a menu to a sheet, build a stand-alone application, or create a container bound application in a Google Sheet or Docs. You can also run a GAS application as a web service - independ from interfaces - that can be called from elsewhere on the web.
 
 # Lesson Steps
 
@@ -22,7 +22,7 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 Triggers allow you to have the script run at a certain time or run based on an action - like when a Google Form is submitted.<br/>
 8. Examine the Publish menu
 9. Examine the Resources menu
-10. Let's add the following code which will declare a varible and put some thing into the Logger (delete what's there):
+10. Let's add the following code which will declare a variable and put something into the Logger (delete what's there):
 ```javascript
 function myFunction() {
   // put something into the logger.
