@@ -13,7 +13,7 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 1. Open Google Drive: https://drive.google.com
 2. Create a new GAS file by clicking the New button -> More -> Google Apps Script
 3. Note the Google Doc like environment
-4. Name our file: LITA 2017 Test script (Lesson One)
+4. Name our file: "LITA 2017 Test script (Lesson One)"
 5. Examine the File menu:<br/>
 "See Version History" is where you can see all the coding changes after a save.<br/>
 "Manage Versions..." allows you to create versions of your code for deployment.<br/>
@@ -39,6 +39,10 @@ function myFunction() {
 "Logs" is where you can see what was output with the Logger. This is a helpful way to debug or troubleshoot problems.<br/>
 14. Place a stop point (red dot) and Debug the function: myFunction()
 ![Image of GAS Debug](debug.png)
+
+#### Final GAS File
+
+https://script.google.com/d/14b5L5NFBe5GyGSmZgW45zupXHSBfV9k-Y5O2ePi5fCqRb4L-EJf0wppS/edit?usp=sharing
 
 # Resource list
 
