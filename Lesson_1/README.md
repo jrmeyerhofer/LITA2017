@@ -25,13 +25,13 @@ Triggers allow you to have the script run at a certain time or run based on an a
 9. Examine the Publish menu
 10. Examine the Resources menu
 11. Get coding: Let's add the following code deleteing what's there:
-'''javascript
+```javascript
 function myFunction() {
   // put something into the logger.
   var myTestVar = "John is cool";
   Logger.log("myTestVar is: " + myTestVar);
 }
-'''
+```
 
 We'll - demo coding environment - You can watch as I walk through this or walk along with me.
 
