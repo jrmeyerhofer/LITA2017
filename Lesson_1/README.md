@@ -15,10 +15,9 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 3. Note the Google Doc like environment. 
 4. Name our file: LITA 2017 Test script (Lesson One)
 5. Examine the File menu
-  Note: See Version History where you can see all the coding changes after a save
-        Manage Versions...
-        Project Properties
-
+  - See Version History where you can see all the coding changes after a save
+  - Manage Versions...
+  - Project Properties
 6. Examine the Edit menu
 7. Examine the View menu
 8. Examine the Run menu
