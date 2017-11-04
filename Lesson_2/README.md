@@ -1,4 +1,4 @@
-# Lesson One - Create your own function
+# Lesson Two - Create your own function
 
 In this lesson we'll create our own function in a Google Sheet.
 
@@ -37,7 +37,11 @@ function myFunction() {
 14. Place a stop point (red dot) and Debug the function: myFunction()
 ![Image of GAS Debug](debug.png)
 
-# Resource list
+## Lesson Final Sheet
+
+https://docs.google.com/spreadsheets/d/1wb8yw8zWIOyGSxPgmZvbjonZh9gImeLjYUs7E0ibP_w/edit?usp=sharing
+
+## Resource list
 
 Main GAS documentation: https://developers.google.com/apps-script/
 
