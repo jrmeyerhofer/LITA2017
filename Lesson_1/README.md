@@ -3,6 +3,21 @@ Lesson One - Getting orientated - demo coding environment - You can watch as I w
 Basic file menu, just like google docs we can give our file a name.
 We also have version control in GAS. We can create a new version. This is helpful for releases of code or just managing your code.
 
+Code can be added in the code editor and follows the Javascript syntax
+Add code to get the Project property.
+
+function myFunction() {
+  // put something into the logger.
+  var myTestVar = "John is cool";
+  Logger.log("myTestVar is: " + myTestVar);
+}
+//Logger Service: https://developers.google.com/apps-script/reference/base/logger
+
+if we save, then run it then view the log. 
+Talk about Run menu
+
+Talk about Publish, Resoures, triggers later.
+
 Javascript so doesn’t need to be compiled. Show version control, 
 
 What can you do? Add a menu to a sheet, stand-alone application, or container bound in a Google Sheet or Docs. Run as a web service - independ from interfaces.
