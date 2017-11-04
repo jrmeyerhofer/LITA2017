@@ -39,7 +39,7 @@ You can run just a single function which can help for testing, or debug a single
 "Execution Transcript" shows you all the events and things that happened during the execution.<br/>
 "Logs" is where you can see what was output with the Logger. This is a helpful way to debug or troubleshoot problems.<br/>
 14. Place a stop point (red dot) and Debug the function: myFunction()
-
+![Image of GAS Debug](debug.png)
 
 # Resource list
 
