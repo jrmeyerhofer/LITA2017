@@ -21,8 +21,8 @@ function addTwoMoretoNumber(input) {
 5. Save and name your bound script. This code has created a basic function that takes in some input and then returns that input with the string " is cool" appended to it. 
 6. Let’s take a look at what it does in our sheet. Leave the script file open and go back to your GSheet tab. Enter in your first name into the A1 cell. Then in the B1 cell enter:
 ```=addCooltoString(A1)```
-7. Tab off the cell. This will take your name and add “ is cool” to it.
-<p>![Image of step 5](is_cool.png)</p>
+7. Tab off the cell. This will take your name and add “ is cool” to it.<br /><br />
+![Image of step 5](is_cool.png)
 
 
 
