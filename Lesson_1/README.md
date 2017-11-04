@@ -10,9 +10,9 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 
 # Lesson Steps
 
-1. Open Google Drive: https://drive.google.com
-2. Create a new GAS file by clicking the New button -> More -> Google Apps Script
-3. Note the Google Doc like environment. 
+- Open Google Drive: https://drive.google.com
+- Create a new GAS file by clicking the New button -> More -> Google Apps Script
+- Note the Google Doc like environment. 
 4. Name our file: LITA 2017 Test script (Lesson One)
 5. Examine the File menu<br/>
 "See Version History" is where you can see all the coding changes after a save.<br/>
@@ -20,7 +20,6 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 "Project Properties" contains detailed Google information about your project. Good to know it's there.<br/>
 6. Examine the Edit menu<br/>
 Triggers allow you to have the script run at a certain time or run based on an action - like when a Google Form is submitted.<br/>
-7. Examine the View menu
 8. Examine the Run menu
 9. Examine the Publish menu
 10. Examine the Resources menu
@@ -32,9 +31,14 @@ function myFunction() {
   Logger.log("myTestVar is: " + myTestVar);
 }
 ```
-12. Save the project and click the Run or play button.
-13. This should prompt us to authorize our script. 
-![Image of GAS authorization](authorization.png)
+12. Save the project with the disk icon or File -> Save
+13. Examine the Run menu
+
+
+
+and click the Run or play button.
+13.
+7. Examine the View menu
 
 
 We'll - demo coding environment - You can watch as I walk through this or walk along with me.
