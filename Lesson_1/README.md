@@ -8,7 +8,7 @@ Allows you to create add-ons for Google Sheets, Docs, Slides, or Forms, automate
 
 What can you do? Add a menu to a sheet, build a stand-alone application, or create a container bound application in a Google Sheet or Docs. You can also run a GAS application as a web service - independ from interfaces - that can be called from elsewhere on the web.
 
-# Lesson Steps
+## Lesson Steps
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new GAS file by clicking the New button -> More -> Google Apps Script
@@ -20,8 +20,9 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 "Project Properties" contains detailed Google information about your project. Good to know it's there.<br/>
 6. Examine the Edit menu<br/>
 Triggers allow you to have the script run at a certain time or run based on an action - like when a Google Form is submitted.<br/>
-8. Examine the Publish menu
-9. Examine the Resources menu
+8. Examine the Publish menu - we'll talk about this in a future lesson but just know that this is how you would deploy a web app.
+9. Examine the Resources menu - mostly beyond scope of this session<br/>
+"Advanced Google Services" where you can, and have to turn on, other Google services to interface with them.<br/>
 10. Let's add the following code which will declare a variable and put something into the Logger (delete what's there):
 ```javascript
 function myFunction() {
@@ -43,10 +44,6 @@ We'll - demo coding environment - You can watch as I walk through this or walk a
 
 Debug - just show, place a stop point - see information available. Screen print
 View execution transcript
-
-Talk about Publish, 
-
-Resources menu: beyond scope of this session but just know about the advanced Google Services where you can and have to turn on other Google servieces to interface with them.
 
 Somethings in first few lessons are just neat and I think if you know about them, you might be able to use them at your job.
 
