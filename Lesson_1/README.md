@@ -24,7 +24,7 @@ Triggers allow you to have the script run at a certain time or run based on an a
 8. Examine the Run menu
 9. Examine the Publish menu
 10. Examine the Resources menu
-11. Get coding: Let's add the following code deleteing what's there:
+11. Let's add the following code deleteing what's there:
 ```javascript
 function myFunction() {
   // put something into the logger.
@@ -32,6 +32,8 @@ function myFunction() {
   Logger.log("myTestVar is: " + myTestVar);
 }
 ```
+12. Save the project and click the Run or play button.
+13. This should prompt us to authorize our script. 
 
 We'll - demo coding environment - You can watch as I walk through this or walk along with me.
 
@@ -65,4 +67,6 @@ Main GAS documentation: https://developers.google.com/apps-script/
 Logger Service: https://developers.google.com/apps-script/reference/base/logger
 
 Information about Troubleshooting/Debugger: https://developers.google.com/apps-script/guides/support/troubleshooting
+
+GAS authorization: https://developers.google.com/apps-script/guides/services/authorization
 
