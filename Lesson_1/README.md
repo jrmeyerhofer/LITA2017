@@ -10,9 +10,9 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 
 # Lesson Steps
 
-- Open Google Drive: https://drive.google.com
-- Create a new GAS file by clicking the New button -> More -> Google Apps Script
-- Note the Google Doc like environment. 
+1. Open Google Drive: https://drive.google.com
+2. Create a new GAS file by clicking the New button -> More -> Google Apps Script
+3. Note the Google Doc like environment. 
 4. Name our file: LITA 2017 Test script (Lesson One)
 5. Examine the File menu<br/>
 "See Version History" is where you can see all the coding changes after a save.<br/>
@@ -20,10 +20,9 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 "Project Properties" contains detailed Google information about your project. Good to know it's there.<br/>
 6. Examine the Edit menu<br/>
 Triggers allow you to have the script run at a certain time or run based on an action - like when a Google Form is submitted.<br/>
-8. Examine the Run menu
-9. Examine the Publish menu
-10. Examine the Resources menu
-11. Let's add the following code deleteing what's there:
+8. Examine the Publish menu
+9. Examine the Resources menu
+10. Let's add the following code which will declare a varible and put some thing into the Logger (delete what's there):
 ```javascript
 function myFunction() {
   // put something into the logger.
@@ -32,37 +31,22 @@ function myFunction() {
 }
 ```
 12. Save the project with the disk icon or File -> Save
-13. Examine the Run menu
-
-
-
-and click the Run or play button.
-13.
-7. Examine the View menu
+13. Examine the Run menu<br/>
+You can run just a single function which can help for testing, or debug a single function.<br/>
+14. Run the function: myFunction
+15. Examine the View menu<br/>
+"Execution Transcript" shows you all the events and things that happened during the execution.<br/>
+"Logs" is where you can see what was output with the Logger. This is a helpful way to debug or troubleshoot problems.<br/>
 
 
 We'll - demo coding environment - You can watch as I walk through this or walk along with me.
 
-Code can be added in the code editor and follows the Javascript syntax
-Add code to get the Project property.
-
-function myFunction() {
-  // put something into the logger.
-  var myTestVar = "John is cool";
-  Logger.log("myTestVar is: " + myTestVar);
-}
-
-if we save, then run it then view the log. 
-Talk about Run menu
-
 Debug - just show, place a stop point - see information available. Screen print
 View execution transcript
 
-Talk about Publish, triggers? 
+Talk about Publish, 
 
 Resources menu: beyond scope of this session but just know about the advanced Google Services where you can and have to turn on other Google servieces to interface with them.
-
-Maybe just explain: triggers now. Especially useful in Google Forms (show later?)
 
 Somethings in first few lessons are just neat and I think if you know about them, you might be able to use them at your job.
 
