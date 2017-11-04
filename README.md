@@ -5,40 +5,15 @@ Files, code, and other cool stuff from my LITA 2017 presentation: Take your Goog
 
 Please have a Google account and if you have a laptop, please bring it.
 
-**Table of Contents for the session**
+## [Lesson One - Getting Orientated](/Lesson_1/)
 
-- [Lesson 1](#lesson-1)
-- [Lesson 2](#lesson-2)
-- [Lesson 3](#lesson-3)
-- [Lesson 4](#lesson-4)
-- [Lesson 5](#lesson-5)
+**Description:** In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment.<br /> 
+**Objective(s):** Get aclimated to the Google Apps Script IDE.
 
+## [Lesson Two - Create your own function](/Lesson_1/)
 
-## Lesson 1 - Getting into Google Apps Script
-
-**Description:** Here is the description of the lesson.<br /> 
-**Objective(s):** Here are the objectives for the lesson<br />
-**Starter template:** https://todaysmeet.com/<br />
-**Final version of the lesson code/file:** https://todaysmeet.com/<br />
-**Help:** [chat here](https://todaysmeet.com/)<br />
-
-[Lesson Resource List](lesson1.md)
-
-## Lesson 2
-
-Test content
-
-## Lesson 3 
-
-Test content
-
-## Lesson 4 
-
-Test content
-
-## Lesson 5 
-
-Test content
+**Description:** In this lesson we'll create our own function in a Google Sheet.<br /> 
+**Objective(s):** Learn how GAS can be bound to Google Apps and their connection.
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
