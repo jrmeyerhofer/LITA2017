@@ -7,14 +7,22 @@ In this lesson we'll create our own function in a Google Sheet.
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 Custom Function (Lesson Two)"
 3. Click on Tools menu and choose Script Editor - This opens a script file that is associated with the sheet we just created. This is what’s called a bound script. 
->“A script is bound to a Google Sheets, Docs, or Forms file if it was created from that document rather than as a standalone >script. The file a bound script is attached to is referred to as a "container". Bound scripts generally behave like >standalone scripts except that they do not appear in Google Drive, they cannot be detached from the file they are bound to, >and they gain a few special privileges over the parent file.”
-4.
-Link to GIST: Copy in this code overwriting everything that is there.
-So we have a basic function that takes in some input and then returns a that input with the string is cool onto it. Let’s take a look at what it does in our sheet
-Enter in your first name into the A1 cell. Then in the B1 cell type = then the function name addCooltoString, then paren, A1, then close paren.
-This will take your name and add “is cool” to it.
+>“A script is bound to a Google Sheets, Docs, or Forms file if it was created from that document rather than as a standalone script. The file a bound script is attached to is referred to as a "container". Bound scripts generally behave like standalone scripts except that they do not appear in Google Drive, they cannot be detached from the file they are bound to, and they gain a few special privileges over the parent file.”
+4. Copy in this code overwriting everything that is there:
+```javascript
+function addCooltoString(input) {
+   return input + " is cool";
+}
 
-Did that work for everyone? Simple right! 
+function addTwoMoretoNumber(input) {
+   return input + input + 2;
+}
+```
+Save and name your bound script. This code has created a basic function that takes in some input and then returns that input with the string " is cool" appended to it. 
+5. Let’s take a look at what it does in our sheet. Leave the script file open and go back to your GSheet tab. Enter in your first name into the A1 cell. Then in the B1 cell enter:
+```=addCooltoString(A1)```
+Tab of the cell. This will take your name and add “ is cool” to it.
+![Image of step 5](is_cool.png)
 
 
 
