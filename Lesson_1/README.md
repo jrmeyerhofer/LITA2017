@@ -2,22 +2,22 @@
 
 In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment.
 
-# Google Apps Script:
+#### Google Apps Script:
 
 Allows you to create add-ons for Google Sheets, Docs, Slides, or Forms, automate your workflow, integrate with external APIs, and more. It is JavaScript "like" and doesn’t need to be compiled. Because it's built into Google, you don't have to worry about hosting, backups, security, patching your server/application, or uploading files to a server.
 
 What can you do? Add a menu to a sheet, build a stand-alone application, or create a container bound application in a Google Sheet or Docs. You can also run a GAS application as a web service - independ from interfaces - that can be called from elsewhwere on the web.
 
-# Steps
+# Lesson Steps
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new GAS file by clicking the New button -> More -> Google Apps Script
 3. Note the Google Doc like environment. 
 4. Name our file: LITA 2017 Test script (Lesson One)
-5. Examine the File menu
-  - See Version History where you can see all the coding changes after a save
-  - Manage Versions...
-  - Project Properties
+5. Examine the File menu<br/>
+See Version History where you can see all the coding changes after a save
+Manage Versions...
+Project Properties
 6. Examine the Edit menu
 7. Examine the View menu
 8. Examine the Run menu
