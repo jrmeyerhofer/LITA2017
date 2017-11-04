@@ -18,20 +18,22 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 "See Version History" is where you can see all the coding changes after a save.<br/>
 "Manage Versions..." allows you to create versions of your code for deployment.<br/>
 "Project Properties" contains detailed Google information about your project. Good to know it's there.<br/>
-6. Examine the Edit menu
+6. Examine the Edit menu<br/>
+Triggers allow you to have the script run at a certain time or run based on an action - like when a Google Form is submitted.<br/>
 7. Examine the View menu
 8. Examine the Run menu
 9. Examine the Publish menu
 10. Examine the Resources menu
-
-
-
-Show version control, 
+11. Get coding: Let's add the following code deleteing what's there:
+'''javascript
+function myFunction() {
+  // put something into the logger.
+  var myTestVar = "John is cool";
+  Logger.log("myTestVar is: " + myTestVar);
+}
+'''
 
 We'll - demo coding environment - You can watch as I walk through this or walk along with me.
-
-Basic file menu, just like google docs we can give our file a name.
-We also have version control in GAS. We can create a new version. This is helpful for releases of code or just managing your code.
 
 Code can be added in the code editor and follows the Javascript syntax
 Add code to get the Project property.
@@ -41,9 +43,6 @@ function myFunction() {
   var myTestVar = "John is cool";
   Logger.log("myTestVar is: " + myTestVar);
 }
-//Main Google Apps Script site: https://developers.google.com/apps-script/
-//Logger Service: https://developers.google.com/apps-script/reference/base/logger
-//Information about Troubleshooting/Debugger: https://developers.google.com/apps-script/guides/support/troubleshooting
 
 if we save, then run it then view the log. 
 Talk about Run menu
@@ -61,5 +60,9 @@ Somethings in first few lessons are just neat and I think if you know about them
 
 # Resource list
 
-https://developers.google.com/apps-script/
-Main Google documentation and help for Google Apps Script
+Main GAS documentation: https://developers.google.com/apps-script/
+
+Logger Service: https://developers.google.com/apps-script/reference/base/logger
+
+Information about Troubleshooting/Debugger: https://developers.google.com/apps-script/guides/support/troubleshooting
+
