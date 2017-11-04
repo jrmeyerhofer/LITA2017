@@ -16,7 +16,13 @@ function myFunction() {
 if we save, then run it then view the log. 
 Talk about Run menu
 
-Talk about Publish, Resoures, triggers later.
+Debug - just show, place a stop point - see information available. Screen print
+
+Talk about Publish, triggers? 
+
+Resources menu: beyond scope of this session but just know about the advanced Google Services where you can and have to turn on other Google servieces to interface with them.
+
+Maybe just explain: triggers now. Especially useful in Google Forms (show later?)
 
 Javascript so doesn’t need to be compiled. Show version control, 
 
