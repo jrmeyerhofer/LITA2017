@@ -40,11 +40,11 @@ function myFunction() {
 14. Place a stop point (red dot) and Debug the function: myFunction()
 ![Image of GAS Debug](debug.png)
 
-#### Final GAS File
+## Final GAS File
 
 https://script.google.com/d/14b5L5NFBe5GyGSmZgW45zupXHSBfV9k-Y5O2ePi5fCqRb4L-EJf0wppS/edit?usp=sharing
 
-# Resource list
+## Resource list
 
 Main GAS documentation: https://developers.google.com/apps-script/
 
