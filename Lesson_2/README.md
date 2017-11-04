@@ -41,9 +41,6 @@ function myFunction() {
 
 Main GAS documentation: https://developers.google.com/apps-script/
 
-Logger Service: https://developers.google.com/apps-script/reference/base/logger
+Creating custom functions: https://developers.google.com/apps-script/guides/sheets/functions#using_a_custom_function
 
-Information about Troubleshooting/Debugger: https://developers.google.com/apps-script/guides/support/troubleshooting
-
-GAS authorization: https://developers.google.com/apps-script/guides/services/authorization
-
+Bound script: https://developers.google.com/apps-script/guides/bound
