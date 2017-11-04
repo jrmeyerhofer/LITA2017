@@ -34,6 +34,8 @@ function myFunction() {
 ```
 12. Save the project and click the Run or play button.
 13. This should prompt us to authorize our script. 
+![Image of GAS authorization](authorization.png)
+
 
 We'll - demo coding environment - You can watch as I walk through this or walk along with me.
 
