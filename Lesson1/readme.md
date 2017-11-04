@@ -8,3 +8,14 @@ Javascript so doesn’t need to be compiled. Show version control,
 What can you do? Add a menu to a sheet, stand-alone application, or container bound in a Google Sheet or Docs. Run as a web service - independ from interfaces.
 
 Benefits - security built in, no patches to your own web server, no transfer files from computer to server, backups, version control, 
+
+# Resource list
+
+https://developers.google.com/apps-script/
+Main Google documentation and help for Google Apps Script
+
+Lesson One: https://developers.google.com/apps-script/guides/sheets/functions#using_a_custom_function
+Creating custom functions
+
+Bound script
+https://developers.google.com/apps-script/guides/bound
