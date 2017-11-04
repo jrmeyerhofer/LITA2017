@@ -19,25 +19,27 @@ function onOpen() {
           .addItem('Second Menu', 'menuTwo'))
       .addToUi();
 }
-
 function menuOne() {
   SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
      .alert('You clicked the first menu item!');
 }
-
 function menuTwo() {
   SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
      .alert('You clicked the second menu item!');
 }
+function buttonClick() {
+  SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
+     .alert('You clicked the button!');
+}
 ```
 5. Save and name your script. This code will add a custom menu to our sheet. 
-6. Manually run the XXXXX function. If you look at your sheet, you will now have a new menu.<br /><br />
+6. Manually run the onOpen() function. *Note: onOpen() is a simple trigger and will normally run when a user opens a spreadsheet, document, or form.* If you look at your sheet, you will now have a new menu.<br /><br />
 ![Image of Menu](custom_menu.png)
 
-click on menu and it runs the appropriate funtion:<br /><br />
+7. Click on one of the menus and it will run the appropriate funtion - *menuOne() or menuTwo()*:<br /><br />
 ![Image of Popup](popup.png)
 
-
+8. You can also assign a function to an image or drawing. Back in our sheet, click the Insert -> Drawing menu. Add a rectangular shape to our sheet.
 
 
 has created a basic function that takes in some input and then returns that input with the string " is cool" appended to it. 
@@ -61,11 +63,6 @@ Simple Triggers: https://developers.google.com/apps-script/guides/triggers/
 
 
 
-Next we’ll Create some custom menus 
-Open a new Google Doc and title it Lesson Two Menu LITA
-Click on the Tools Menu and open the Script Editor
-Open this gist code - link - and copy it into the script editor.
-Save and name your script file.
 So before we run this let’s look through the code and see what it’s going to do.
 You’ll see the first function, onOpen. This is a special function in Google Apps Script. It is a simple triggers which executes when a user opens a Google Docs, Sheets, or Forms file. There are others which you can read about in the resources. 
 First it gets the document, then it adds a menu called Custom Menu. Then it adds 'First item' to the menu, then a Separator, then a submenu with an item, finally it actually adds it to the Document. Also note that during each of the adds, a function is being associated to that menu item. So if I click on Second item that will trigger menuItem2. 
