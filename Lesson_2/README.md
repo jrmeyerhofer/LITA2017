@@ -21,7 +21,7 @@ function addCooltoString(input) {
 ![Image of step 5](is_cool.png)
 8. Excersize (5-10min): Create a function that will add 2 to any number.
 
-## Lesson Final Sheet
+## Final Google Sheet
 
 https://docs.google.com/spreadsheets/d/1wb8yw8zWIOyGSxPgmZvbjonZh9gImeLjYUs7E0ibP_w/edit?usp=sharing
 
