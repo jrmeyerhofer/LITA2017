@@ -31,10 +31,10 @@ function menuTwo() {
 }
 ```
 5. Save and name your script. This code will add a custom menu to our sheet. 
-6. Manually run the XXXXX function. If you look at your sheet, you will now have a new menu.
+6. Manually run the XXXXX function. If you look at your sheet, you will now have a new menu.<br /><br />
 ![Image of Menu](custom_menu.png)
 
-click on menu and it runs the appropriate funtion:
+click on menu and it runs the appropriate funtion:<br /><br />
 ![Image of Popup](popup.png)
 
 
