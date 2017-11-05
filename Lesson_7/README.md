@@ -6,15 +6,15 @@ In this lesson we'll create a new book list.
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 New Book List (Lesson Seven)"
-3. Copy this into your sheet (this is our pretend new book data):<br />
-ISBN | Author | Title<br />
------|--------|------<br />
-abc321465498 | Zeus | The Big Book of Number 1s<br />
-hij18842f532 | Apollo | The Big Book of Stars<br />
-lmn458137952 | Athena | The Big Book of Long Ovals<br />
-mno545558501 | Demeter | The Big Book Vertical Ovals<br />
-rst824713975 | Poseidon | The Big Book of Rectangles<br />
-xyz582528202 | Hera | The Big Book of Polygons<br />
+3. Copy this into your sheet (this is our pretend new book data):
+<table>
+<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
+<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
+<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
+<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
+<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
+<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
+</table>
 
 4. Click on Tools menu and choose Script Editor.<br /> 
 5. Copy in this code overwriting everything that is there:<br />
