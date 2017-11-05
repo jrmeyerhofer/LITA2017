@@ -31,7 +31,7 @@ function myFunction() {
   Logger.log("myTestVar is: " + myTestVar);
 }
 ```
-10. Save the project with the disk icon or File -> Save
+10. Save the project with the disk icon or File -> Save. *[Remember you may have to authorize your script](../authorize.md)*
 11. Examine the Run menu - You can run just a single function which can help for testing, or debug a single function.<br/>
 12. Run the function: myFunction()
 13. Examine the View menu:<br/>
