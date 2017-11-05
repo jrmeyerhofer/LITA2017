@@ -63,14 +63,14 @@ function getOAAPIDOI()
 //Create the menu to run from the sheet
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
-  ui.createMenu('Call OA API')
+  ui.createMenu('Call oaAPI')
       .addItem('Use DOI in cell A1 to call API','getOAAPIDOI')
       .addToUi();
 }
 ```
-8. First, you'll see something familar. The onOpen function that will create a custom menu for us to run from our sheet. 
-9. Manually run the onOpen function to create the menu.
-10. The other code is new, so let's walk through it:
+5. First, you'll see something familar. The onOpen function that will create a custom menu for us to run from our sheet. 
+6. Manually run the onOpen function to create the menu.
+7. The other code is new, so let's walk through it:<br />
 This code gets the active sheet, then sets the value of cell B1. This is a nice way to see visually what the code is doing.
 ```javascript
     var ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -107,8 +107,9 @@ Finally, we navigate the JSON file, and get the value of the doi and put it in c
       cell.setValue(doi);
     }
 ```
-
-
+8. Now with the knowledge of what the code is doing, we can go back to our sheet and enter a DOI in cell A1 (ex. 10.1088/0004-637x/812/2/158).
+9. Click the menu to Call the oaAPI. You should see:<br /><br /> 
+![Image of the Results](oaapi.png)
 
 
 
