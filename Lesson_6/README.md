@@ -6,9 +6,8 @@ In this lesson we'll learn how to scrape a website. We are going to scrape a fak
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 Scrape (Lesson Six)"
-3. Copy this into your sheet:
+3. Copy this into your sheet (these are our pretend ISBNs):
 ```
-ISBNs
 abc321465498
 hij18842f532
 lmn458137952
@@ -22,6 +21,10 @@ xyz582528202
 
 ```
 6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
+7. Back in the sheet, run the new menu option to Scrape the Web. You should see this:
+![Image of images](images.png)
+8. Let's look at the code to see what it's doing:
+
 
 
 code, get first image? they do others? code should loop? feed from ISBNs?
@@ -96,12 +99,6 @@ https://docs.google.com/spreadsheets/d/1k21QDclGmK1YGOiyPuOUq4_QnISM4OXmVr1qfFgO
 
 Main GAS documentation: https://developers.google.com/apps-script/
 
-External APIs: https://developers.google.com/apps-script/guides/services/external
-
 UrlFetchApp: https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app
 
-
-
-https://unsplash.com/photos/rMYrkFfw36U
-
-
+Free Images: https://unsplash.com/photos/rMYrkFfw36U
