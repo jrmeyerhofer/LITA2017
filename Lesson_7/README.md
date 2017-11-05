@@ -43,11 +43,11 @@ function callImageSearch() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getActiveSheet();
   
-  var cell = sheet.getRange("D1");
-  cell.setValue("ImageURL");
+  var cell = sheet.getRange('D1');
+  cell.setValue('ImageURL');
   
-  var cell = sheet.getRange("E1");
-  cell.setValue("RecordLink");
+  var cell = sheet.getRange('E1');
+  cell.setValue('RecordLink');
   
   //Loop through Column A, getting the ISBN numbers
   for (var i = 2; i < 500; i++) {
