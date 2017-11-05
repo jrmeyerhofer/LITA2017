@@ -83,8 +83,7 @@ function onOpen() {
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 8. Now you can run the custom menu function to get the image and record URL.<br /><br />
 ![Image of Image Data](image_data.png)
-9. Now we're going to create a new book list using this data. To do so, we'll utilize a JavaScript library called [List.js](http://listjs.com/). This library takes an HTML list index and can create a simple search and sort interface for our new book list webpage.<br />
-<br />
+9. Now we're going to create a new book list using this data. To do so, we'll utilize a JavaScript library called [List.js](http://listjs.com/). This library takes an HTML list index and can create a simple search and sort interface for our new book list webpage.<br /><br />
 ![Image of li tag](list.png)
 10. Let's start by concatenating our data into li tags. In our Google Sheet enter this into cell F2:
 ```
@@ -92,7 +91,7 @@ function onOpen() {
 ```
 11. This code will string together our data with some HTML tags to create a list. Highlight cells F2:F7 and press cmd+D or ctrl+D to fill down the formula.
 12. In your favorite text editor (need one? ), enter in this code to create our HTML file:
-```html
+```
 <!DOCTYPE html>
 <html>
   <head>
