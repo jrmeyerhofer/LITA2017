@@ -18,7 +18,64 @@ xyz582528202
 4. Click on Tools menu and choose Script Editor. 
 5. Copy in this code overwriting everything that is there:
 ```javascript
+function callImageSearch() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getActiveSheet();
+ 
+  //Loop through Column A, getting the ISBN numbers
+  for (var i = 1; i < 500; i++) {
+    
+	var ISBNNumber = sheet.getRange(i,1).getValue();
+	Logger.log('ISBNNumber: ' + ISBNNumber);
+    
+	// if the value is blank, no more ISBN Numbers! Break out!
+	if (ISBNNumber == "") { break; }
+        
+    //example url: https://sites.google.com/meyerhofer.com/lita2017/home/mno545558501-html
+	var ISBNURL = 'https://sites.google.com/meyerhofer.com/lita2017/home/' + ISBNNumber + '-html';
+	var html = UrlFetchApp.fetch(ISBNURL).getContentText();
+ 
+	if (html) {
+  	  if (html.indexOf('CENy8b') >= 0) {
+    	  // Image is present
+    	  var locURL = html.indexOf('t3iYD');
+    	  var locSpace = html.indexOf('CENy8b',locURL);
+    	  var localURL = html.substring(locURL+17,locSpace-9)
+  	  } else {
+      	  var localURL = "No Image";
+  	  }
+	}
+	Logger.log('locURL: ' +locURL);
+	Logger.log('locSpace: ' +locSpace);
+	Logger.log('localURL: ' +localURL);   
 
+	var cell = sheet.getRange("B"+i);
+	cell.setValue(localURL);
+    
+	var image = '=image(B' + i + ',4,90,70)';
+	var imagecell = sheet.getRange("C"+i);
+	imagecell.setValue(image);
+    
+	var ISBNlinkcell = sheet.getRange("D"+i);
+	ISBNlinkcell.setValue(ISBNURL);
+    
+    // Sets the row to a height of 100 pixels so we can see the image
+	sheet.setRowHeight(i, 100);
+
+	//clear the variables
+	locURL = "";
+	locSpace = "";
+	localURL = "";
+
+  }
+}
+//Run once to create the menu to run from the sheet!
+function onOpen() {
+  var ui = SpreadsheetApp.getUi();
+  ui.createMenu('Scrape the Web')
+  	.addItem('Get Image URLs from ISBN Numbers in col A','callImageSearch')
+  	.addToUi();
+}
 ```
 6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 7. Back in the sheet, run the new menu option to Scrape the Web. You should see this:
@@ -27,6 +84,10 @@ xyz582528202
 
 
 
+
+
+
+<br /><br /><br /><br /><br /><br /><br /><br />
 code, get first image? they do others? code should loop? feed from ISBNs?
 
 
