@@ -38,7 +38,7 @@ In this lesson we'll create a new book list.
 </table>
 4. Click on Tools menu and choose Script Editor.<br /> 
 5. Copy in this code overwriting everything that is there:<br />
-<code>
+```javascript
 function callImageSearch() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getActiveSheet();
@@ -96,7 +96,7 @@ function onOpen() {
   	.addItem('Get Image URLs from ISBN Numbers in col A','callImageSearch')
   	.addToUi();
 }
-</code>
+```
 6. This is the code we created from Lesson 6 but changed a little for our data. 
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 8. Now you can run the custom menu function to get the image and record URL.
