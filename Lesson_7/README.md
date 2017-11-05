@@ -39,6 +39,7 @@ In this lesson we'll create a new book list.
 4. Click on Tools menu and choose Script Editor.<br /> 
 5. Copy in this code overwriting everything that is there:<br />
 ```javascript
+
 function callImageSearch() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getActiveSheet();
