@@ -7,13 +7,13 @@ In this lesson we'll create a new book list.
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 New Book List (Lesson Seven)"
 3. Copy this into your sheet (this is our pretend new book data):
-ISBN	Author	Title
-abc321465498	Zeus	The Big Book of Number 1s
-hij18842f532	Apollo	The Big Book of Stars
-lmn458137952	Athena	The Big Book of Long Ovals
-mno545558501	Demeter	The Big Book Vertical Ovals
-rst824713975	Poseidon	The Big Book of Rectangles
-xyz582528202	Hera	The Big Book of Polygons
+ISBN	Author	Title<br />
+abc321465498	Zeus	The Big Book of Number 1s<br />
+hij18842f532	Apollo	The Big Book of Stars<br />
+lmn458137952	Athena	The Big Book of Long Ovals<br />
+mno545558501	Demeter	The Big Book Vertical Ovals<br />
+rst824713975	Poseidon	The Big Book of Rectangles<br />
+xyz582528202	Hera	The Big Book of Polygons<br />
 4. Click on Tools menu and choose Script Editor.<br /> 
 5. Copy in this code overwriting everything that is there:<br />
 ```javascript
@@ -76,7 +76,7 @@ function onOpen() {
   	.addToUi();
 }
 ```
-6. This is the code we created from Lesson 6 but changed a little for our data. 
+6. This is the code we created from Lesson 6 but changed a little for this lesson. 
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 8. Now you can run the custom menu function to get the image and record URL.
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
