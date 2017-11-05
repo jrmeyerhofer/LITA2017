@@ -37,8 +37,8 @@ In this lesson we'll create a new book list.
   </tbody>
 </table>
 <br />
-3. Click on Tools menu and choose Script Editor. 
-4. Copy in this code overwriting everything that is there:
+4. Click on Tools menu and choose Script Editor. 
+5. Copy in this code overwriting everything that is there:
 ```javascript
 function callImageSearch() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -98,58 +98,10 @@ function onOpen() {
   	.addToUi();
 }
 ```
-5. This is the code we created from Lesson 6 but changed a little for our data. 
-6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
-
-
-
-
-
-7. The other code is new, so let's walk through it:<br />
-This code gets the active sheet, then sets the value of cell B1. This is a nice way to visually see what the code is doing.
-```javascript
-    var ss = SpreadsheetApp.getActiveSpreadsheet();
-    var sheet = ss.getActiveSheet();
-    var cell = sheet.getRange("B1");
-    cell.setValue("STATUS: Starting...");
-```
-Here we are getting the value of cell A1, which should have our DOI, making sure it doesn't have any spaces before or after it.
-```javascript
-    var DOInumber = sheet.getRange("A1").getValue();
-    DOInumber = DOInumber.trim();
-    var cell = sheet.getRange("A1");
-    cell.setValue(DOInumber);
-```
-This code pieces together our URL then uses the URLFetch function to open it and then put the return value, a JSON string, into a variable.
-```javascript
-    var doiJSON = 'https://api.oadoi.org/' + DOInumber + '?email=' + email_key;
-    var json = UrlFetchApp.fetch(doiJSON);
-    var response = json.getContentText();
-    var data = JSON.parse(response);
-```
-We then put that JSON string in the A3 cell.
-```javascript
-    var cell = sheet.getRange("A3");
-    cell.setValue(response);
-```
-Finally, we navigate the JSON file, and get the value of the doi and put it in cell B5.
-```javascript
-    if ('doi' in data['results'][0]) {
-      var doi = data['results'][0]['doi'];
-      var cell = sheet.getRange("A5");
-      cell.setValue("doi");
-      var cell = sheet.getRange("B5");
-      cell.setValue(doi);
-    }
-```
-8. Now with the knowledge of what the code is doing, we can go back to our sheet and enter a DOI in cell A1 (ex. 10.1088/0004-637x/812/2/158).
-9. Click the menu to "Call oaAPI". You should see:<br /><br /> 
-![Image of the Results](oaapi.png)
-10. **Excersize (5 min):** Try other DOIs. Do you always get the same values back? What's different? Why is it different? Ready more about oaDOI's API DOI object: https://oadoi.org/api/v2#doi-object
-11. **Excersize (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL value?
-12. **Challenge Excersize (10 min):** Can you call the [Crossref API](https://github.com/CrossRef/rest-api-doc) and extract its data? Example: https://api.crossref.org/works/10.1037/0003-066X.59.1.29
-
-**Note: This is just one of the many APIs you can call from GAS. In some cases you may need a [key](https://en.wikipedia.org/wiki/Application_programming_interface_key) to performa a call. More APIs can be found at https://apilist.fun/ and https://github.com/toddmotto/public-apis.**
+6. This is the code we created from Lesson 6 but changed a little for our data. 
+7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
+8. Now you can run the custom menu function to get the image and record URL.
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 ## Final Google Sheet
 
