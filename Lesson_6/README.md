@@ -86,13 +86,13 @@ First, we get the active sheet, and loop through the ISBN numbers in col A. Then
 var ISBNURL = 'https://sites.google.com/meyerhofer.com/lita2017/home/' + ISBNNumber + '-html';
 var html = UrlFetchApp.fetch(ISBNURL).getContentText();
 ```
-With our HTML page in a variable, we can search for the specific string which will mark the image file.
+With the entire HTML page in a variable, we can search for the specific string which will mark the image file.
 ```
 var locURL = html.indexOf('t3iYD');
 var locSpace = html.indexOf('CENy8b',locURL);
 var localURL = html.substring(locURL+17,locSpace-9)
 ```
-This is a perfect example why scraping a website is an inexact science! With the URL, we write out the data and image to the website.<br />
+This is a perfect example why scraping a website is an inexact science! With the URL, we write out the data and image into the sheet.<br />
 9. **Excersize (15 min):** Get the image url from http://www.worldcat.org/title/little-life-a-novel/oclc/886672369. Some tips: Find a unique tag or string before and after the image url. Google Dev Tools can help find or select HTML elements. For the previous ISBNs we used the dev tools to find the image url:<br /><br />
 ![Image of isbn](isbn.png)<br /><br />
 Then looked for a unique string before and after the image URL:
