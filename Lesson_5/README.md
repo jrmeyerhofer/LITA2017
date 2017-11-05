@@ -1,37 +1,88 @@
 # Lesson Five - Calling APIs
 
-In this lesson we'll learn how to call APIs from a Google Apps Script and call the XXXX API.
+In this lesson we'll learn how to call APIs from a Google Apps Script and call the oaDOI API.
 
 ## Lesson Steps
 
-1. Open Google Drive: https://drive.google.com
-2. Create a new Google Sheet and name our file: "LITA 2017 Custom Menu (Lesson Three)"
-3. Click on Tools menu and choose Script Editor. 
-4. Copy in this code overwriting everything that is there:
+1. Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158
+2. This has called the oaDOI API: https://oadoi.org/api. This API gives us access to oaDOI's data about DOIs and their details. 
+3. We are going to create a simple application that will take a DOI input, call the oaDOI API and then display the data we get back.
+4. Open Google Drive: https://drive.google.com
+5. Create a new Google Sheet and name our file: "LITA 2017 API (Lesson Five)"
+6. Click on Tools menu and choose Script Editor. 
+7. Copy in this code overwriting everything that is there:
 ```javascript
+function getOAAPIDOI()
+{
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sheet = ss.getActiveSheet();
+  
+    //Status: Intialize
+    var cell = sheet.getRange("B1");
+    cell.setValue("STATUS: Starting...");
+    
+    var email_key = 'youremail@test.com'; 
+    var DOInumber = sheet.getRange("A1").getValue();
+    DOInumber = DOInumber.trim();
+    var cell = sheet.getRange("A1");
+    cell.setValue(DOInumber);
+    
+    //Status: Calling OADOI API
+    var cell = sheet.getRange("B1");
+    cell.setValue("STATUS: Calling OADOI API...");
+    
+	  //example of what the URL of a call would look like. Could put this into a browser window and see the JSON:
+	  //https://api.oadoi.org/10.1088/0004-637X/802/1/66
+	  var doiJSON = 'https://api.oadoi.org/' + DOInumber + '?email=' + email_key;
+    Logger.log('doiJSON: ' + doiJSON);
+    
+    // Make request to API and get response before this point.
+    var json = UrlFetchApp.fetch(doiJSON);
+    Logger.log('json: ' + json);
+    var response = json.getContentText();
+    Logger.log('response: ' + response);
+    var data = JSON.parse(response);
+   	
+    //put out the whole JSON string
+    var cell = sheet.getRange("A3");
+    cell.setValue(response);
+  
+    //doi - 5
+    if ('doi' in data['results'][0]) {
+      var doi = data['results'][0]['doi'];
+      Logger.log('doi: ' + doi);
+      var cell = sheet.getRange("A5");
+      cell.setValue("doi");
+      var cell = sheet.getRange("B5");
+      cell.setValue(doi);
+    }
+ 
+    //Status: Done
+    var cell = sheet.getRange("B1");
+    cell.setValue("STATUS: Done!");
+}
+//Create the menu to run from the sheet
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
-  // Or DocumentApp or FormApp.
-  ui.createMenu('Our Custom Menu')
-      .addItem('First Menu', 'menuOne')
-      .addSeparator()
-      .addSubMenu(ui.createMenu('SubMenu')
-          .addItem('Second Menu', 'menuTwo'))
+  ui.createMenu('Call OA API')
+      .addItem('Use DOI in cell A1 to call API','getOAAPIDOI')
       .addToUi();
 }
-function menuOne() {
-  SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
-     .alert('You clicked the first menu item!');
-}
-function menuTwo() {
-  SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
-     .alert('You clicked the second menu item!');
-}
-function buttonClick() {
-  SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
-     .alert('You clicked the button!');
-}
 ```
+8. First, you'll see something familar. The onOpen function will create a custom menu for us to run from our sheet. 
+9. Manually run the onOpen function to create the menu.
+10. The other code is new, so let's walk through it:
+
+The other code is a bit more detailed. Let's walk thorugh it. 
+
+
+
+
+
+
+
+
+
 5. Save and name your script. This code will add a custom menu to our sheet with a menu item and a sub-menu. You can see where it designates the name and then the function that will run when that menu is clicked. 
 6. Manually run the onOpen() function. *Note: onOpen() is a special function called a simple trigger and will normally run when a user opens a spreadsheet, document, or form.* If you look at your sheet, you will now have a new menu.<br /><br />
 ![Image of Menu](custom_menu.png)
@@ -45,12 +96,10 @@ function buttonClick() {
 
 ## Final Google Sheet
 
-https://docs.google.com/spreadsheets/d/1lWE6zxqOta44FM5m7-oHTPFjBbP1fnTDIaKQth1fb78/edit?usp=sharing
+
 
 ## Resource list
 
 Main GAS documentation: https://developers.google.com/apps-script/
 
-Custom Menus: https://developers.google.com/apps-script/guides/menus
-
-Simple Triggers: https://developers.google.com/apps-script/guides/triggers/
+External APIs: https://developers.google.com/apps-script/guides/services/external
