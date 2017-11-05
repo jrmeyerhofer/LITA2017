@@ -92,32 +92,15 @@ var locURL = html.indexOf('t3iYD');
 var locSpace = html.indexOf('CENy8b',locURL);
 var localURL = html.substring(locURL+17,locSpace-9)
 ```
-This is a perfect example why scraping a website is an inexact science! With the URL, we write out the data and image into the sheet.<br /><br />
+This is a perfect example why scraping a website is an inexact science and APIs are a much better option! With the URL, we write out the data and image into the sheet.<br /><br />
 9. **Excersize (15 min):** Get the image url from http://www.worldcat.org/title/little-life-a-novel/oclc/886672369. Some tips: Google Dev Tools can help find or select HTML elements. Find a unique tag or string before and after the image url. For example, in the previous steps, we used the dev tools to find the image url:<br /><br />
 ![Image of isbn](isbn.png)<br /><br />
 Then looked for a unique string before and after the image URL:<br /><br />
 ![Image of tags](tags.png)
 
-
-<br /><br /><br /><br /><br /><br /><br /><br />
-code, get first image? they do others? code should loop? feed from ISBNs?
-
-remember be good about scrapign websites! scrapign an exact science. APIs better!
-
-inline linking? 
-
-challenge: https://www.googleapis.com/books/v1/volumes?q=oclc:886672369 
-google book api?
-
-10. **Excersize (5 min):** Try other DOIs. Do you always get the same values back? What's different? Why is it different? Ready more about oaDOI's API DOI object: https://oadoi.org/api/v2#doi-object
-11. **Excersize (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL value?
-12. **Challenge Excersize (10 min):** Can you call the [Crossref API](https://github.com/CrossRef/rest-api-doc) and extract its data? Example: https://api.crossref.org/works/10.1037/0003-066X.59.1.29
-
-**Note: This is just one of the many APIs you can call from GAS. In some cases you may need a [key](https://en.wikipedia.org/wiki/Application_programming_interface_key) to performa a call. More APIs can be found at https://apilist.fun/ and https://github.com/toddmotto/public-apis.**
-
 ## Final Google Sheet
 
-https://docs.google.com/spreadsheets/d/1k21QDclGmK1YGOiyPuOUq4_QnISM4OXmVr1qfFgOxSg/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/10B6sOAaJeiwFKPTQyzoV87oLRwBZUA0ogrvLazU2JHw/edit?usp=sharing
 
 ## Resource list
 
