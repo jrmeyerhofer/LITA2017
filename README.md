@@ -7,13 +7,15 @@ Please have a Google account and if you have a laptop, please bring it.
 
 ## [Lesson One - Getting Orientated](/Lesson_1/)
 
-**Description:** In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment.<br /> 
-**Objective(s):** Get aclimated to the Google Apps Script IDE.
+**Description:** In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment. 
 
 ## [Lesson Two - Create your own function](/Lesson_2/)
 
-**Description:** In this lesson we'll create our own function in a Google Sheet.<br /> 
-**Objective(s):** Learn how GAS can be bound to Google Apps and their connection.
+**Description:** In this lesson we'll create our own function in a Google Sheet.
+
+## [Lesson Three - Create a custom menu](/Lesson_3/)
+
+**Description:** In this lesson we'll create our own menu in a Google Sheet.
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
