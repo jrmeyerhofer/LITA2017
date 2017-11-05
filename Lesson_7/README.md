@@ -83,12 +83,59 @@ function onOpen() {
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 8. Now you can run the custom menu function to get the image and record URL.<br /><br />
 ![Image of Image Data](image_data.png)
-9. Now we're going to create a new book list using this data. To do so, we'll utilize a JavaScript library called [List.js](). Simply put, we can create a HTML list index with our data and plug it into a simple HTML file to create a nice new book list.
-<<mock up of <li> tag utilization>>
+9. Now we're going to create a new book list using this data. To do so, we'll utilize a JavaScript library called [List.js](http://listjs.com/). This library takes an HTML list index and can create a simple search and sort interface for our new book list webpage.<br />
+<br />
+![Image of li tag](list.png)
+10. Let's start by concatenating our data into li tags. In our Google Sheet enter this into cell F2:
+```
+=CONCATENATE("<li><img width='10%' src='", D2, "' /><a class='title' href='", E2,"'> ", C2, "</a> by ", B2, "</li>")
+```
+11. This code will string together our data with some HTML tags to create a list. Highlight cells F2:F7 and press cmd+D or ctrl+D to fill down the formula.
+12. In your favorite text editor (need one? ), enter in this code to create our HTML file:
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-10. 
+  </head>
+  <body>
+    <div class="container">
+    <div id="books">
 
-add an html file in script area.
+<!-- class="search" automagically makes an input a search field. -->
+  <input class="search" placeholder="Search" />
+<!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
+  <button class="sort" data-sort="title">
+    Sort
+  </button>
+
+<!-- Child elements of container with class="list" becomes list items -->
+  <ul class="list">
+    
+    <!-- LIST INDEX HERE!!!! -->
+    
+  </ul>
+</div>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script>
+  
+  var options = {
+  valueNames: [ 'title' ]
+};
+
+var userList = new List('books', options);
+
+</script>
+</div>
+  </body>
+</html>
+
+```
+10. Save your file to your Desktop and open it. You should see a nice new book list:
+![Image of final new book list](booklist.png)
 
 ## Final Google Sheet
 
