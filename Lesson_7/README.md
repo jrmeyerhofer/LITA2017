@@ -1,6 +1,6 @@
 # Lesson Seven - New Book List
 
-In this lesson we'll create a new book list.
+In this lesson we'll create a new book list webpage.
 
 ## Lesson Steps
 
@@ -88,7 +88,7 @@ function onOpen() {
 
 10. 
 
-
+add an html file in script area.
 
 ## Final Google Sheet
 
