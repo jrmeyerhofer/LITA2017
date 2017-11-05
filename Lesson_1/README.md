@@ -37,10 +37,10 @@ function myFunction() {
 13. Examine the View menu:<br/>
 "Execution Transcript" shows you all the events and things that happened during the execution.<br/>
 "Logs" is where you can see what was output with the Logger. This is a helpful way to debug or troubleshoot problems.<br/>
-14. Place a stop point (red dot) and Debug the function: myFunction()
+14. Place a stop point (red dot) and Debug the function: myFunction()<br /><br />
 ![Image of GAS Debug](debug.png)
 
-## Final GAS File
+## Final Google Apps Script File
 
 https://script.google.com/d/14b5L5NFBe5GyGSmZgW45zupXHSBfV9k-Y5O2ePi5fCqRb4L-EJf0wppS/edit?usp=sharing
 
@@ -53,4 +53,3 @@ Logger Service: https://developers.google.com/apps-script/reference/base/logger
 Information about Troubleshooting/Debugger: https://developers.google.com/apps-script/guides/support/troubleshooting
 
 GAS authorization: https://developers.google.com/apps-script/guides/services/authorization
-
