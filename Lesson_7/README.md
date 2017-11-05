@@ -82,7 +82,7 @@ function onOpen() {
 6. This is the code we created from Lesson 6 but changed a little for this lesson. 
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 8. Now you can run the custom menu function to get the image and record URL.
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Image Data](image_data.png)
 
 ## Final Google Sheet
 
