@@ -81,17 +81,14 @@ function onOpen() {
 ```
 6. This is the code we created from Lesson 6 but changed a little for this lesson. 
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
-8. Now you can run the custom menu function to get the image and record URL.
+8. Now you can run the custom menu function to get the image and record URL.<br /><br />
 ![Image of Image Data](image_data.png)
 
 ## Final Google Sheet
 
-https://docs.google.com/spreadsheets/d/1k21QDclGmK1YGOiyPuOUq4_QnISM4OXmVr1qfFgOxSg/edit?usp=sharing
 
 ## Resource list 
 
 Main GAS documentation: https://developers.google.com/apps-script/
 
-External APIs: https://developers.google.com/apps-script/guides/services/external
-
-UrlFetchApp: https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app
+List.js: http://listjs.com/
