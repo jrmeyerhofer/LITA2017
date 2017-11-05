@@ -78,7 +78,7 @@ function onOpen() {
 }
 ```
 6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
-7. Back in the sheet, run the new menu option to Scrape the Web. You should see this:
+7. Back in the sheet, run the new menu option to Scrape the Web. You should see this:<br /><br />
 ![Image of images](images.png)
 8. Let's look at the code to see what it's doing:<br />
 First, we get the active sheet, and loop through the ISBN numbers in col A. Then we get the URL and fetch it.
@@ -92,9 +92,9 @@ var locURL = html.indexOf('t3iYD');
 var locSpace = html.indexOf('CENy8b',locURL);
 var localURL = html.substring(locURL+17,locSpace-9)
 ```
-This is a perfect example why scraping a website is an inexact science! With the URL, we write out the data and image to the website.
-9. **Excersize (15 min):** Get the image url from http://www.worldcat.org/title/little-life-a-novel/oclc/886672369. Some tips: Find a unique tag or string before and after the image url. Google Dev Tools can help find or select HTML elements. For the previous ISBNs we used the dev tools to find the image url:<br />
-![Image of isbn](isbn.png)<br />
+This is a perfect example why scraping a website is an inexact science! With the URL, we write out the data and image to the website.<br />
+9. **Excersize (15 min):** Get the image url from http://www.worldcat.org/title/little-life-a-novel/oclc/886672369. Some tips: Find a unique tag or string before and after the image url. Google Dev Tools can help find or select HTML elements. For the previous ISBNs we used the dev tools to find the image url:<br /><br />
+![Image of isbn](isbn.png)<br /><br />
 Then looked for a unique string before and after the image URL:
 ![Image of tags](tags.png)
 
