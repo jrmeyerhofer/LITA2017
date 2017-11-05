@@ -5,23 +5,23 @@ Files, code, and other cool stuff from my LITA 2017 presentation: Take your Goog
 
 Please have a Google account and if you have a laptop, please bring it.
 
-## [Lesson One - Getting Orientated](/Lesson_1/)
+#### [Lesson One - Getting Orientated](/Lesson_1/)
 
 **Description:** In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment. 
 
-## [Lesson Two - Create your own function](/Lesson_2/)
+#### [Lesson Two - Create your own function](/Lesson_2/)
 
 **Description:** In this lesson we'll create our own function in a Google Sheet.
 
-## [Lesson Three - Create a custom menu](/Lesson_3/)
+#### [Lesson Three - Create a custom menu](/Lesson_3/)
 
 **Description:** In this lesson we'll create our own menu in a Google Sheet.
 
-## [Lesson Four - Create a custom window](/Lesson_4/)
+#### [Lesson Four - Create a custom window](/Lesson_4/)
 
 **Description:** In this lesson we'll create a custom input window in a Google Doc.
 
-## [Lesson Five - Call APIs](/Lesson_5/)
+#### [Lesson Five - Call APIs](/Lesson_5/)
 
 **Description:** In this lesson we'll call and API using Google Apps Script and a Google Sheet.
 
