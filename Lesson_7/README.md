@@ -36,8 +36,8 @@ In this lesson we'll create a new book list.
     </tr>
   </tbody>
 </table>
-4. Click on Tools menu and choose Script Editor. 
-5. Copy in this code overwriting everything that is there:
+4. Click on Tools menu and choose Script Editor.<br /> 
+5. Copy in this code overwriting everything that is there:<br />
 ```javascript
 function callImageSearch() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
