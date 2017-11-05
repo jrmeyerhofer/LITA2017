@@ -69,7 +69,7 @@ function onOpen() {
 }
 ```
 5. First, you'll see something familar. The onOpen function that will create a custom menu for us to run from our sheet. 
-6. Save. *[Remember you may have to authorize your script](../authorize.md)* Then manually run the onOpen function to create the menu.
+6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 7. The other code is new, so let's walk through it:<br />
 This code gets the active sheet, then sets the value of cell B1. This is a nice way to see visually what the code is doing.
 ```javascript
