@@ -19,7 +19,7 @@ function addCooltoString(input) {
 ```=addCooltoString(A1)```
 7. Tab off the cell. This will take your name and add “ is cool” to it.<br /><br />
 ![Image of step 5](is_cool.png)
-8. Excersize (5-10min): Create a function that will take in a whole number and add 2 more than that number to it. *I bet you didn’t know there was going to be Math during this session did you!* So, if we have 5, our new function would be 5 + 7 or 12.
+8. **Excersize (5-10 min):** Create a function that will take in a whole number and add 2 more than that number to it. *I bet you didn’t know there was going to be Math during this session did you!* So, if we have 5, our new function would be 5 + 7 or 12.
 
 ## Final Google Sheet
 
