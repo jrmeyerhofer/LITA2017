@@ -1,4 +1,4 @@
-# Lesson Four - Custom windows
+# Lesson Four - Custom windows - IN PROGRESS
 
 In this lesson we'll create a custom input window in a Google Doc.
 
