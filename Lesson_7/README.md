@@ -106,7 +106,7 @@ function onOpen() {
 
 https://docs.google.com/spreadsheets/d/1k21QDclGmK1YGOiyPuOUq4_QnISM4OXmVr1qfFgOxSg/edit?usp=sharing
 
-## Resource list
+## Resource list 
 
 Main GAS documentation: https://developers.google.com/apps-script/
 
