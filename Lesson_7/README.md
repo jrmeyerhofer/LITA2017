@@ -4,10 +4,17 @@ In this lesson we'll create a new book list.
 
 ## Lesson Steps
 
-**Background:** Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158. This has called the oaDOI API (https://oadoi.org/api) returning JSON data about that DOI. This API gives us access to oaDOI's data about DOIs and their details. We are going to create a simple application that will take a DOI input, call the oaDOI API, and display the data we get back. Remember, when calling APIs, to follow their rules. Many times you'll need a key or to pass an identifier with the call. Also, call APIs responsibily by spacing your calls if you can.
-
 1. Open Google Drive: https://drive.google.com
-2. Create a new Google Sheet and name our file: "LITA 2017 API (Lesson Five)"
+2. Create a new Google Sheet and name our file: "LITA 2017 New Book List (Lesson Seven)"
+3. Copy this into your sheet (this is our pretend new book data):
+ISBN | Author | Title
+------------ | ------------- | -------------
+abc321465498 | Zeus | The Big Book of Number 1s
+hij18842f532 | Apollo | The Big Book of Stars 
+lmn458137952 | Athena | The Big Book of Long Ovals
+mno545558501 | Demeter | The Big Book Vertical Ovals
+rst824713975 | Poseidon | The Big Book of Rectangles
+xyz582528202 | Hera | The Big Book of Polygons
 3. Click on Tools menu and choose Script Editor. 
 4. Copy in this code overwriting everything that is there:
 ```javascript
