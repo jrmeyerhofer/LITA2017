@@ -1,6 +1,6 @@
 # Lesson Five - Scraping the web
 
-In this lesson we'll learn how to scrape a website. We are going to scrape a fake catalog for book cover images. Here is the Fake Book Site: https://sites.google.com/meyerhofer.com/lita2017/home 
+In this lesson we'll learn how to scrape a website. We are going to scrape a fake catalog for book cover images. This is so we don't overload any of the real catalogs and possibliy make them block us. Here is the Fake Book Site: https://sites.google.com/meyerhofer.com/lita2017/home 
 
 ## Lesson Steps
 
@@ -31,7 +31,7 @@ function callImageSearch() {
 	// if the value is blank, no more ISBN Numbers! Break out!
 	if (ISBNNumber == "") { break; }
         
-    //example url: https://sites.google.com/meyerhofer.com/lita2017/home/mno545558501-html
+        //example url: https://sites.google.com/meyerhofer.com/lita2017/home/mno545558501-html
 	var ISBNURL = 'https://sites.google.com/meyerhofer.com/lita2017/home/' + ISBNNumber + '-html';
 	var html = UrlFetchApp.fetch(ISBNURL).getContentText();
  
@@ -59,7 +59,7 @@ function callImageSearch() {
 	var ISBNlinkcell = sheet.getRange("D"+i);
 	ISBNlinkcell.setValue(ISBNURL);
     
-    // Sets the row to a height of 100 pixels so we can see the image
+        // Sets the row to a height of 100 pixels so we can see the image
 	sheet.setRowHeight(i, 100);
 
 	//clear the variables
@@ -80,11 +80,21 @@ function onOpen() {
 6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 7. Back in the sheet, run the new menu option to Scrape the Web. You should see this:
 ![Image of images](images.png)
-8. Let's look at the code to see what it's doing:
-
-
-
-
+8. Let's look at the code to see what it's doing:<br />
+First, we get the active sheet, and loop through the ISBN numbers in col A. Then we get the URL and fetch it.
+```
+var ISBNURL = 'https://sites.google.com/meyerhofer.com/lita2017/home/' + ISBNNumber + '-html';
+var html = UrlFetchApp.fetch(ISBNURL).getContentText();
+```
+With our HTML page in a variable, we can search for the specific string which will mark the image file.
+```
+var locURL = html.indexOf('t3iYD');
+var locSpace = html.indexOf('CENy8b',locURL);
+var localURL = html.substring(locURL+17,locSpace-9)
+```
+This is a perfect example why scraping a website is an inexact science! With the URL, we write out the data and image to the website.
+9. Excersize?
+10. ?
 
 
 <br /><br /><br /><br /><br /><br /><br /><br />
