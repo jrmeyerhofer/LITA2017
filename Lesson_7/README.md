@@ -90,7 +90,7 @@ function onOpen() {
 =CONCATENATE("<li><img width='10%' src='", D2, "' /><a class='title' href='", E2,"'> ", C2, "</a> by ", B2, "</li>")
 ```
 11. This code will string together our data with some HTML tags to create a list. Highlight cells F2:F7 and press cmd+D or ctrl+D to fill down the formula.
-12. In your favorite text editor (need one? ), enter in this code to create our HTML file:
+12. In your favorite text editor, enter in this code to create our HTML file:
 ```
 <!DOCTYPE html>
 <html>
@@ -133,11 +133,12 @@ var userList = new List('books', options);
 </html>
 
 ```
-10. Save your file to your Desktop and open it. You should see a nice new book list:
+10. Save your file to your Desktop and open it in a browser. You should see a nice new book list:
 ![Image of final new book list](booklist.png)
 
 ## Final Google Sheet
 
+https://docs.google.com/spreadsheets/d/1pQVokR_X-3utnx-7DKEizhxXXk5WdjCBU1MB0ObBvh0/edit?usp=sharing
 
 ## Resource list 
 
