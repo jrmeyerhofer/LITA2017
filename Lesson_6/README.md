@@ -1,10 +1,8 @@
 # Lesson Five - Scraping the web
 
-In this lesson we'll learn how to scrape a website.
+In this lesson we'll learn how to scrape a website. We are going to scrape a fake catalog for book cover images. Here is the Fake Book Site: https://sites.google.com/meyerhofer.com/lita2017/home 
 
 ## Lesson Steps
-
-**Background:** We are going to scrape a fake catalog for book cover images. Here is the Fake Book Site: https://sites.google.com/meyerhofer.com/lita2017/home 
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 Scrape (Lesson Six)"
