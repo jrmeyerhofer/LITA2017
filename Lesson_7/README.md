@@ -40,65 +40,71 @@ In this lesson we'll create a new book list.
 3. Click on Tools menu and choose Script Editor. 
 4. Copy in this code overwriting everything that is there:
 ```javascript
-function getOAAPIDOI()
-{
-    var ss = SpreadsheetApp.getActiveSpreadsheet();
-    var sheet = ss.getActiveSheet();
+function callImageSearch() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getActiveSheet();
   
-    //Status: Intialize
-    var cell = sheet.getRange("B1");
-    cell.setValue("STATUS: Starting...");
-    
-    var email_key = 'youremail@test.com'; 
-    var DOInumber = sheet.getRange("A1").getValue();
-    DOInumber = DOInumber.trim();
-    var cell = sheet.getRange("A1");
-    cell.setValue(DOInumber);
-    
-    //Status: Calling OADOI API
-    var cell = sheet.getRange("B1");
-    cell.setValue("STATUS: Calling OADOI API...");
-    
-    //example of what the URL of a call would look like. Could put this into a browser window and see the JSON:
-    //https://api.oadoi.org/10.1088/0004-637X/802/1/66
-    var doiJSON = 'https://api.oadoi.org/' + DOInumber + '?email=' + email_key;
-    Logger.log('doiJSON: ' + doiJSON);
-    
-    // Make request to API and get response before this point.
-    var json = UrlFetchApp.fetch(doiJSON);
-    Logger.log('json: ' + json);
-    var response = json.getContentText();
-    Logger.log('response: ' + response);
-    var data = JSON.parse(response);
-   	
-    //put out the whole JSON string
-    var cell = sheet.getRange("A3");
-    cell.setValue(response);
+  var cell = sheet.getRange("D1");
+  cell.setValue("ImageURL");
   
-    //doi - 5
-    if ('doi' in data['results'][0]) {
-      var doi = data['results'][0]['doi'];
-      Logger.log('doi: ' + doi);
-      var cell = sheet.getRange("A5");
-      cell.setValue("doi");
-      var cell = sheet.getRange("B5");
-      cell.setValue(doi);
-    }
+  var cell = sheet.getRange("E1");
+  cell.setValue("RecordLink");
+  
+  //Loop through Column A, getting the ISBN numbers
+  for (var i = 2; i < 500; i++) {
+    
+	var ISBNNumber = sheet.getRange(i,1).getValue();
+	Logger.log('ISBNNumber: ' + ISBNNumber);
+    
+	// if the value is blank, no more ISBN Numbers! Break out!
+	if (ISBNNumber == "") { break; }
+        
+        //example url: https://sites.google.com/meyerhofer.com/lita2017/home/mno545558501-html
+	var ISBNURL = 'https://sites.google.com/meyerhofer.com/lita2017/home/' + ISBNNumber + '-html';
+	var html = UrlFetchApp.fetch(ISBNURL).getContentText();
  
-    //Status: Done
-    var cell = sheet.getRange("B1");
-    cell.setValue("STATUS: Done!");
+	if (html) {
+  	  if (html.indexOf('CENy8b') >= 0) {
+    	  // Image is present
+    	  var locURL = html.indexOf('t3iYD');
+    	  var locSpace = html.indexOf('CENy8b',locURL);
+    	  var localURL = html.substring(locURL+17,locSpace-9)
+  	  } else {
+      	  var localURL = "No Image";
+  	  }
+	}
+	Logger.log('locURL: ' +locURL);
+	Logger.log('locSpace: ' +locSpace);
+	Logger.log('localURL: ' +localURL);   
+
+	var cell = sheet.getRange("D"+i);
+	cell.setValue(localURL);
+  
+	var ISBNlinkcell = sheet.getRange("E"+i);
+	ISBNlinkcell.setValue(ISBNURL);
+    
+	//clear the variables
+	locURL = "";
+	locSpace = "";
+	localURL = "";
+
+  }
 }
-//Create the menu to run from the sheet
+//Run once to create the menu to run from the sheet!
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
-  ui.createMenu('Call oaAPI')
-      .addItem('Use DOI in cell A1 to call API','getOAAPIDOI')
-      .addToUi();
+  ui.createMenu('Scrape the Web')
+  	.addItem('Get Image URLs from ISBN Numbers in col A','callImageSearch')
+  	.addToUi();
 }
 ```
-5. First, you'll see something familar. The onOpen() function that will create a custom menu for us to run from our sheet. 
+5. This is the code we created from Lesson 6 but changed a little for our data. 
 6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
+
+
+
+
+
 7. The other code is new, so let's walk through it:<br />
 This code gets the active sheet, then sets the value of cell B1. This is a nice way to visually see what the code is doing.
 ```javascript
