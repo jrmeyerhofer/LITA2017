@@ -37,9 +37,8 @@ remember be good about scrapign websites! scrapign an exact science. APIs better
 inline linking? 
 
 
-
-https://www.dropbox.com/s/iocgy65ix1qkz6q/index.html?dl=0
-
+challenge: https://www.googleapis.com/books/v1/volumes?q=oclc:886672369 
+google book api?
 
 
 **Background:** Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158. This has called the oaDOI API (https://oadoi.org/api) returning JSON data about that DOI. This API gives us access to oaDOI's data about DOIs and their details. We are going to create a simple application that will take a DOI input, call the oaDOI API, and display the data we get back. Remember, when calling APIs, to follow their rules. Many times you'll need a key or to pass an identifier with the call. Also, call APIs responsibily by spacing your calls if you can.
