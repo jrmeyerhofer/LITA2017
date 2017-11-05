@@ -6,7 +6,7 @@ In this lesson we'll create a new book list.
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 New Book List (Lesson Seven)"
-3. Copy this into your sheet (this is our pretend new book data):
+3. Copy this into your sheet (this is our pretend new book data):<pre></pre>
 ISBN | Author | Title
 -----|--------|-------
 abc321465498 | Zeus | The Big Book of Number 1s
