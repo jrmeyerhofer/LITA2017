@@ -1,6 +1,6 @@
 # Lesson Three - Create custom menus
 
-In this lesson we'll create a custom menu and a clickable button in a Google Sheet.
+In this lesson we'll create a custom menu and a clickable button and image in a Google Sheet.
 
 ## Lesson Steps
 
@@ -37,8 +37,10 @@ function buttonClick() {
 ![Image of Menu](custom_menu.png)
 7. Click on one of the menus and it will run the appropriate funtion - *menuOne() or menuTwo()*:<br /><br />
 ![Image of Popup](popup.png)
-8. Excersize (5 min): Create another menu item to go in our menu. This could be on the menu or sub-menu. *Make sure to create a function that gets triggered when it runs!* Rather then re-run the onOpen function manually, what happens if you save the script, close your sheet and then open it back up?
-9. You can also assign a function to an image or drawing. Back in our sheet, click the Insert -> Drawing menu. Add a rectangular shape to our sheet.
+8. Excersize (5 min): Create another menu item and put it anywhere in your menu. *Make sure to create a function that gets triggered when it runs!* Rather then re-run the onOpen function manually, what happens if you save the script, close your sheet and then open it back up?
+9. You can also assign a function to an image or drawing. Back in our sheet, click the Insert -> Drawing menu. Add a rectangular shape to our sheet. 
+10. Click on the three veritcal dots to Assign a Script 
+![Image of assign](assign.png)
 10. Excersize (5 min): Add an image to your sheet and assign a funtion to it. *Easily add an image by URL: https://source.unsplash.com/random*
 
 ## Final Google Sheet
