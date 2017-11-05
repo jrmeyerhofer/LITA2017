@@ -111,7 +111,8 @@ Finally, we navigate the JSON file, and get the value of the doi and put it in c
 9. Click the menu to "Call oaAPI". You should see:<br /><br /> 
 ![Image of the Results](oaapi.png)
 10. **Excersize (5 min):** Try other DOIs. Do you always get the same values back? What's different? Why is it different? Ready more about oaDOI's API DOI object: https://oadoi.org/api/v2#doi-object
-11. **Excersize (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL?
+11. **Excersize (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL value?
+12. **Challenge Excersize (10 min):** Can you get a random dog image? https://dog.ceo/dog-api/
 
 **Note: This is just one of the many APIs you can call from GAS. In some cases you may need a [key](https://en.wikipedia.org/wiki/Application_programming_interface_key) to performa a call. More APIs can be found at https://apilist.fun/ and https://github.com/toddmotto/public-apis.**
 
