@@ -5,15 +5,15 @@ Files, code, and other cool stuff from my LITA 2017 presentation: Take your Goog
 
 Please have a Google account and if you have a laptop, please bring it.
 
-#### [Lesson One - Getting Orientated](/Lesson_1/)<br />In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment. 
+**[Lesson One - Getting Orientated](/Lesson_1/)**<br />In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment. 
 
-#### [Lesson Two - Create your own function](/Lesson_2/)<br />In this lesson we'll create our own function in a Google Sheet.
+**[Lesson Two - Create your own function](/Lesson_2/)**<br />In this lesson we'll create our own function in a Google Sheet.
 
-#### [Lesson Three - Create a custom menu](/Lesson_3/)<br />In this lesson we'll create our own menu in a Google Sheet.
+**[Lesson Three - Create a custom menu](/Lesson_3/)**<br />In this lesson we'll create our own menu in a Google Sheet.
 
-#### [Lesson Four - Create a custom window](/Lesson_4/)<br />In this lesson we'll create a custom input window in a Google Doc.
+**[Lesson Four - Create a custom window](/Lesson_4/)**<br />In this lesson we'll create a custom input window in a Google Doc.
 
-#### [Lesson Five - Call APIs](/Lesson_5/)<br />In this lesson we'll call and API using Google Apps Script and a Google Sheet.
+**[Lesson Five - Call APIs](/Lesson_5/)**<br />In this lesson we'll call and API using Google Apps Script and a Google Sheet.
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
