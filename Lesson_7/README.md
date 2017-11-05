@@ -83,6 +83,12 @@ function onOpen() {
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 8. Now you can run the custom menu function to get the image and record URL.<br /><br />
 ![Image of Image Data](image_data.png)
+9. Now we're going to create a new book list using this data. To do so, we'll utilize a JavaScript library called [List.js](). Simply put, we can create a HTML list index with our data and plug it into a simple HTML file to create a nice new book list.
+<<mock up of <li> tag utilization>>
+
+10. 
+
+
 
 ## Final Google Sheet
 
