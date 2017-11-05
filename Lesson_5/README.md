@@ -4,7 +4,7 @@ In this lesson we'll learn how to call APIs from a Google Apps Script and call t
 
 ## Lesson Steps
 
-**Background:** Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158. This has called the oaDOI API (https://oadoi.org/api) returning JSON data about that DOI. This API gives us access to oaDOI's data about DOIs and their details. We are going to create a simple application that will take a DOI input, call the oaDOI API and then display the data we get back.
+**Background:** Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158. This has called the oaDOI API (https://oadoi.org/api) returning JSON data about that DOI. This API gives us access to oaDOI's data about DOIs and their details. We are going to create a simple application that will take a DOI input, call the oaDOI API, and display the data we get back.
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 API (Lesson Five)"
@@ -68,24 +68,24 @@ function onOpen() {
       .addToUi();
 }
 ```
-5. First, you'll see something familar. The onOpen function that will create a custom menu for us to run from our sheet. 
+5. First, you'll see something familar. The onOpen() function that will create a custom menu for us to run from our sheet. 
 6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 7. The other code is new, so let's walk through it:<br />
-This code gets the active sheet, then sets the value of cell B1. This is a nice way to see visually what the code is doing.
+This code gets the active sheet, then sets the value of cell B1. This is a nice way to visually see what the code is doing.
 ```javascript
     var ss = SpreadsheetApp.getActiveSpreadsheet();
     var sheet = ss.getActiveSheet();
     var cell = sheet.getRange("B1");
     cell.setValue("STATUS: Starting...");
 ```
-Here we are getting the value of cell A1, which should have our DOI, and making sure it doesn't have any spaces before or after it.
+Here we are getting the value of cell A1, which should have our DOI, making sure it doesn't have any spaces before or after it.
 ```javascript
     var DOInumber = sheet.getRange("A1").getValue();
     DOInumber = DOInumber.trim();
     var cell = sheet.getRange("A1");
     cell.setValue(DOInumber);
 ```
-This code pieces together our URL then uses teh URLFetch to open it and puts the JSON string into a variable.
+This code pieces together our URL then uses the URLFetch function to open it and then put the return value, a JSON string, into a variable.
 ```javascript
     var doiJSON = 'https://api.oadoi.org/' + DOInumber + '?email=' + email_key;
     var json = UrlFetchApp.fetch(doiJSON);
@@ -97,7 +97,7 @@ We then put that JSON string in the A3 cell.
     var cell = sheet.getRange("A3");
     cell.setValue(response);
 ```
-Finally, we navigate the JSON file, and get the value of the doi and put it in cell A5
+Finally, we navigate the JSON file, and get the value of the doi and put it in cell B5.
 ```javascript
     if ('doi' in data['results'][0]) {
       var doi = data['results'][0]['doi'];
@@ -108,25 +108,16 @@ Finally, we navigate the JSON file, and get the value of the doi and put it in c
     }
 ```
 8. Now with the knowledge of what the code is doing, we can go back to our sheet and enter a DOI in cell A1 (ex. 10.1088/0004-637x/812/2/158).
-9. Click the menu to Call the oaAPI. You should see:<br /><br /> 
+9. Click the menu to "Call oaAPI". You should see:<br /><br /> 
 ![Image of the Results](oaapi.png)
+10. **Excersize (5 min):** Try other DOIs. Do you always get the same values back? What's different? Why is it different? Ready more about oaDOI's API DOI object: https://oadoi.org/api/v2#doi-object
+11. **Excersize (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL?
 
-
-
-5. Save and name your script. This code will add a custom menu to our sheet with a menu item and a sub-menu. You can see where it designates the name and then the function that will run when that menu is clicked. 
-6. Manually run the onOpen() function. *Note: onOpen() is a special function called a simple trigger and will normally run when a user opens a spreadsheet, document, or form.* If you look at your sheet, you will now have a new menu.<br /><br />
-![Image of Menu](custom_menu.png)
-7. Click on one of the menus and it will run the appropriate funtion - *menuOne() or menuTwo()*:<br /><br />
-![Image of Popup](popup.png)
-8. **Excersize (5 min):** Create another menu item and put it anywhere in your menu. *Make sure to create a function that gets triggered when it runs!* Rather then re-run the onOpen function manually, what happens if you save the script, close your sheet and then open it back up?
-9. You can also assign a function to an image or drawing. Back in our sheet, click the Insert -> Drawing menu. Add a rectangular shape to our sheet. 
-10. Click on the three veritcal dots to Assign a Script *Tip: enter the function without the parens like "buttonClick"<br /><br />
-![Image of assign](assign.png)
-10. **Excersize (5 min):** Add an image to your sheet and assign a funtion to it. *Tip: easily add an image by URL: https://source.unsplash.com/random*
+**Note: This is just one of the many APIs you can call from GAS. In some cases you may need a [key](https://en.wikipedia.org/wiki/Application_programming_interface_key) to performa a call. More APIs can be found at https://apilist.fun/ and https://github.com/toddmotto/public-apis.**
 
 ## Final Google Sheet
 
-
+https://docs.google.com/spreadsheets/d/1k21QDclGmK1YGOiyPuOUq4_QnISM4OXmVr1qfFgOxSg/edit?usp=sharing
 
 ## Resource list
 
