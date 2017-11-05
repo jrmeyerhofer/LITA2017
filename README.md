@@ -15,6 +15,10 @@ Please have a Google account and if you have a laptop, please bring it.
 
 **[Lesson Three - Create a custom menu](/Lesson_3/)**<br />In this lesson we'll create our own menu in a Google Sheet.
 
+**[Lesson Five - Calling APIs](/Lesson_5/)**<br />In this lesson we'll call an API from a Google Sheet.
+
+**[Lesson Six - Scraping the web](/Lesson_6/)**<br />In this lesson we'll scrape a website for content.
+
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
