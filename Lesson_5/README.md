@@ -4,13 +4,12 @@ In this lesson we'll learn how to call APIs from a Google Apps Script and call t
 
 ## Lesson Steps
 
-1. Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158
-2. This has called the oaDOI API: https://oadoi.org/api. This API gives us access to oaDOI's data about DOIs and their details. 
-3. We are going to create a simple application that will take a DOI input, call the oaDOI API and then display the data we get back.
-4. Open Google Drive: https://drive.google.com
-5. Create a new Google Sheet and name our file: "LITA 2017 API (Lesson Five)"
-6. Click on Tools menu and choose Script Editor. 
-7. Copy in this code overwriting everything that is there:
+**Background:** Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158. This has called the oaDOI API (https://oadoi.org/api) returning JSON data about that DOI. This API gives us access to oaDOI's data about DOIs and their details. We are going to create a simple application that will take a DOI input, call the oaDOI API and then display the data we get back.
+
+1. Open Google Drive: https://drive.google.com
+2. Create a new Google Sheet and name our file: "LITA 2017 API (Lesson Five)"
+3. Click on Tools menu and choose Script Editor. 
+4. Copy in this code overwriting everything that is there:
 ```javascript
 function getOAAPIDOI()
 {
@@ -31,9 +30,9 @@ function getOAAPIDOI()
     var cell = sheet.getRange("B1");
     cell.setValue("STATUS: Calling OADOI API...");
     
-	  //example of what the URL of a call would look like. Could put this into a browser window and see the JSON:
-	  //https://api.oadoi.org/10.1088/0004-637X/802/1/66
-	  var doiJSON = 'https://api.oadoi.org/' + DOInumber + '?email=' + email_key;
+    //example of what the URL of a call would look like. Could put this into a browser window and see the JSON:
+    //https://api.oadoi.org/10.1088/0004-637X/802/1/66
+    var doiJSON = 'https://api.oadoi.org/' + DOInumber + '?email=' + email_key;
     Logger.log('doiJSON: ' + doiJSON);
     
     // Make request to API and get response before this point.
@@ -69,15 +68,45 @@ function onOpen() {
       .addToUi();
 }
 ```
-8. First, you'll see something familar. The onOpen function will create a custom menu for us to run from our sheet. 
+8. First, you'll see something familar. The onOpen function that will create a custom menu for us to run from our sheet. 
 9. Manually run the onOpen function to create the menu.
 10. The other code is new, so let's walk through it:
-
-The other code is a bit more detailed. Let's walk thorugh it. 
-
-
-
-
+This code gets the active sheet, then sets the value of cell B1. This is a nice way to see visually what the code is doing.
+```javascript
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sheet = ss.getActiveSheet();
+    var cell = sheet.getRange("B1");
+    cell.setValue("STATUS: Starting...");
+```
+Here we are getting the value of cell A1, which should have our DOI, and making sure it doesn't have any spaces before or after it.
+```javascript
+    var DOInumber = sheet.getRange("A1").getValue();
+    DOInumber = DOInumber.trim();
+    var cell = sheet.getRange("A1");
+    cell.setValue(DOInumber);
+```
+This code pieces together our URL then uses teh URLFetch to open it and puts the JSON string into a variable.
+```javascript
+    var doiJSON = 'https://api.oadoi.org/' + DOInumber + '?email=' + email_key;
+    var json = UrlFetchApp.fetch(doiJSON);
+    var response = json.getContentText();
+    var data = JSON.parse(response);
+```
+We then put that JSON string in the A3 cell.
+```javascript
+    var cell = sheet.getRange("A3");
+    cell.setValue(response);
+```
+Finally, we navigate the JSON file, and get the value of the doi and put it in cell A5
+```javascript
+    if ('doi' in data['results'][0]) {
+      var doi = data['results'][0]['doi'];
+      var cell = sheet.getRange("A5");
+      cell.setValue("doi");
+      var cell = sheet.getRange("B5");
+      cell.setValue(doi);
+    }
+```
 
 
 
@@ -103,3 +132,5 @@ The other code is a bit more detailed. Let's walk thorugh it.
 Main GAS documentation: https://developers.google.com/apps-script/
 
 External APIs: https://developers.google.com/apps-script/guides/services/external
+
+UrlFetchApp: https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app
