@@ -6,6 +6,7 @@ Files, code, and other cool stuff from my LITA 2017 presentation: Take your Goog
 Please have a Google account and if you have a laptop, please bring it.
 
 <hr>
+**Note:** *[You may have to authorize your script.](authorize.md)*
 
 **[Lesson One - Getting Orientated](/Lesson_1/)**<br />In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment. 
 
