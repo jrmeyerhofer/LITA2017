@@ -9,11 +9,12 @@ In this lesson we'll create a new book list.
 3. Copy this into your sheet (this is our pretend new book data):
 <table>
 <tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
-<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
-<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
-<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
-<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
-<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
+<tr><td>abc321465498</td><td>Zeus</td><td>The Big Book of Number 1s</td></tr>
+<tr><td>hij18842f532</td><td>Apollo</td><td>The Big Book of Stars</td></tr>
+<tr><td>lmn458137952</td><td>Athena</td><td>The Big Book of Long Ovals</td></tr>
+<tr><td>mno545558501</td><td>Demeter</td><td>The Big Book Vertical Ovals</td></tr>
+<tr><td>rst824713975</td><td>Poseidon</td><td>The Big Book of Rectangles</td></tr>
+<tr><td>xyz582528202</td><td>Hera</td><td>The Big Book of Polygons</td></tr>
 </table>
 
 4. Click on Tools menu and choose Script Editor.<br /> 
