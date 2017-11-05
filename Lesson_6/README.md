@@ -4,72 +4,46 @@ In this lesson we'll learn how to scrape a website.
 
 ## Lesson Steps
 
-**Background:** Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158. This has called the oaDOI API (https://oadoi.org/api) returning JSON data about that DOI. This API gives us access to oaDOI's data about DOIs and their details. We are going to create a simple application that will take a DOI input, call the oaDOI API, and display the data we get back. Remember, when calling APIs, to follow their rules. Many times you'll need a key or to pass an identifier with the call. Also, call APIs responsibily by spacing your calls if you can.
+**Background:** We are going to scrape a fake catalog for book cover images. Here is the Fake Book Site: https://sites.google.com/meyerhofer.com/lita2017/home 
 
 1. Open Google Drive: https://drive.google.com
-2. Create a new Google Sheet and name our file: "LITA 2017 API (Lesson Five)"
-3. Click on Tools menu and choose Script Editor. 
-4. Copy in this code overwriting everything that is there:
-```javascript
-function getOAAPIDOI()
-{
-    var ss = SpreadsheetApp.getActiveSpreadsheet();
-    var sheet = ss.getActiveSheet();
-  
-    //Status: Intialize
-    var cell = sheet.getRange("B1");
-    cell.setValue("STATUS: Starting...");
-    
-    var email_key = 'youremail@test.com'; 
-    var DOInumber = sheet.getRange("A1").getValue();
-    DOInumber = DOInumber.trim();
-    var cell = sheet.getRange("A1");
-    cell.setValue(DOInumber);
-    
-    //Status: Calling OADOI API
-    var cell = sheet.getRange("B1");
-    cell.setValue("STATUS: Calling OADOI API...");
-    
-    //example of what the URL of a call would look like. Could put this into a browser window and see the JSON:
-    //https://api.oadoi.org/10.1088/0004-637X/802/1/66
-    var doiJSON = 'https://api.oadoi.org/' + DOInumber + '?email=' + email_key;
-    Logger.log('doiJSON: ' + doiJSON);
-    
-    // Make request to API and get response before this point.
-    var json = UrlFetchApp.fetch(doiJSON);
-    Logger.log('json: ' + json);
-    var response = json.getContentText();
-    Logger.log('response: ' + response);
-    var data = JSON.parse(response);
-   	
-    //put out the whole JSON string
-    var cell = sheet.getRange("A3");
-    cell.setValue(response);
-  
-    //doi - 5
-    if ('doi' in data['results'][0]) {
-      var doi = data['results'][0]['doi'];
-      Logger.log('doi: ' + doi);
-      var cell = sheet.getRange("A5");
-      cell.setValue("doi");
-      var cell = sheet.getRange("B5");
-      cell.setValue(doi);
-    }
- 
-    //Status: Done
-    var cell = sheet.getRange("B1");
-    cell.setValue("STATUS: Done!");
-}
-//Create the menu to run from the sheet
-function onOpen() {
-  var ui = SpreadsheetApp.getUi();
-  ui.createMenu('Call oaAPI')
-      .addItem('Use DOI in cell A1 to call API','getOAAPIDOI')
-      .addToUi();
-}
+2. Create a new Google Sheet and name our file: "LITA 2017 Scrape (Lesson Six)"
+3. Copy this into your sheet:
 ```
-5. First, you'll see something familar. The onOpen() function that will create a custom menu for us to run from our sheet. 
+ISBNs
+abc321465498
+hij18842f532
+lmn458137952
+mno545558501
+rst824713975
+xyz582528202
+```
+4. Click on Tools menu and choose Script Editor. 
+5. Copy in this code overwriting everything that is there:
+```javascript
+
+```
 6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
+
+
+code, get first image? they do others? code should loop? feed from ISBNs?
+
+
+
+
+remember be good about scrapign websites! scrapign an exact science. APIs better!
+
+inline linking? 
+
+
+
+https://www.dropbox.com/s/iocgy65ix1qkz6q/index.html?dl=0
+
+
+
+**Background:** Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158. This has called the oaDOI API (https://oadoi.org/api) returning JSON data about that DOI. This API gives us access to oaDOI's data about DOIs and their details. We are going to create a simple application that will take a DOI input, call the oaDOI API, and display the data we get back. Remember, when calling APIs, to follow their rules. Many times you'll need a key or to pass an identifier with the call. Also, call APIs responsibily by spacing your calls if you can.
+
+
 7. The other code is new, so let's walk through it:<br />
 This code gets the active sheet, then sets the value of cell B1. This is a nice way to visually see what the code is doing.
 ```javascript
