@@ -92,10 +92,10 @@ var locURL = html.indexOf('t3iYD');
 var locSpace = html.indexOf('CENy8b',locURL);
 var localURL = html.substring(locURL+17,locSpace-9)
 ```
-This is a perfect example why scraping a website is an inexact science! With the URL, we write out the data and image into the sheet.<br />
-9. **Excersize (15 min):** Get the image url from http://www.worldcat.org/title/little-life-a-novel/oclc/886672369. Some tips: Find a unique tag or string before and after the image url. Google Dev Tools can help find or select HTML elements. For the previous ISBNs we used the dev tools to find the image url:<br /><br />
+This is a perfect example why scraping a website is an inexact science! With the URL, we write out the data and image into the sheet.<br /><br />
+9. **Excersize (15 min):** Get the image url from http://www.worldcat.org/title/little-life-a-novel/oclc/886672369. Some tips: Google Dev Tools can help find or select HTML elements. Find a unique tag or string before and after the image url. For example, in the previous steps, we used the dev tools to find the image url:<br /><br />
 ![Image of isbn](isbn.png)<br /><br />
-Then looked for a unique string before and after the image URL:
+Then looked for a unique string before and after the image URL:<br /><br />
 ![Image of tags](tags.png)
 
 
