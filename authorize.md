@@ -5,7 +5,7 @@ You will get a general prompt to review permissions<br /><br />
 ![Image of Authoization 1](auth1.png)<br /><br />
 Next you choose the account to authorize<br /><br />
 ![Image of Authoization 1](auth2.png)<br /><br />
-You may see this error, if you feel safe to authorize it, click the advanced link, then the link to go to the project.<br /><br />
+You may see this error about the [app not being verified](https://mashe.hawksey.info/2017/08/my-google-apps-script-app-isnt-verified-understanding-why-and-how-to-fix/), if you feel safe to authorize it, click the advanced link, then the link to go to the project.<br /><br />
 ![Image of Error Authoization](autherror.png)<br /><br />
 Finally, you allow the script access<br /><br />
 ![Image of Authoization 1](auth3.png)<br /><br />
