@@ -37,8 +37,10 @@ function myFunction() {
 13. Examine the View menu:<br/>
 "Execution Transcript" shows you all the events and things that happened during the execution.<br/>
 "Logs" is where you can see what was output with the Logger. This is a helpful way to debug or troubleshoot problems.<br/>
-14. Place a stop point (red dot) and Debug the function: myFunction()<br /><br />
+14. Look at the log now. Are you cool?
+15. Place a stop point (red dot) and using the Run menu, Debug the function: myFunction()<br /><br />
 ![Image of GAS Debug](debug.png)
+16. Take note of all the available information when you Debug. Logger and Debug can be helpful for figuring out problems with your code. Not that there is problems with your code. Just saying...
 
 ## Final Google Apps Script File
 
