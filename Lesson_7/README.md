@@ -6,7 +6,7 @@ In this lesson we'll create a new book list webpage.
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 New Book List (Lesson 7)"
-3. Copy this into your sheet (this is our pretend new book data):
+3. Copy this into your sheet in cells A1:C7 (this is our pretend new book data):
 <table>
 <tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
 <tr><td>abc321465498</td><td>Zeus</td><td>The Big Book of Number 1s</td></tr>
@@ -17,7 +17,7 @@ In this lesson we'll create a new book list webpage.
 <tr><td>xyz582528202</td><td>Hera</td><td>The Big Book of Polygons</td></tr>
 </table>
 
-4. Click on Tools menu and choose Script Editor.<br /> 
+4. Click on the Tools menu and choose Script Editor.<br /> 
 5. Copy in this code overwriting everything that is there:<br />
 ```javascript
 
