@@ -47,6 +47,7 @@ function buttonClick() {
 ## Final Google Sheet
 
 https://docs.google.com/spreadsheets/d/1lWE6zxqOta44FM5m7-oHTPFjBbP1fnTDIaKQth1fb78/edit?usp=sharing
+*Don't try to run this script, you'll get an [error](../autherror.png). Copy the code and run it in your own Google Drive.*
 
 ## Resource list
 
