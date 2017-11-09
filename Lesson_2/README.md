@@ -24,6 +24,7 @@ function addCooltoString(input) {
 ## Final Google Sheet
 
 https://docs.google.com/spreadsheets/d/1wb8yw8zWIOyGSxPgmZvbjonZh9gImeLjYUs7E0ibP_w/edit?usp=sharing
+*Don't try to run this script, you'll get an [error](../autherror.png). Copy the code and run it in your own Google Drive.*
 
 ## Resource list
 
