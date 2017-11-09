@@ -52,7 +52,7 @@ function callImageSearch() {
 	var cell = sheet.getRange("B"+i);
 	cell.setValue(localURL);
     
-	var image = '=image(B' + i + ',4,90,70)';
+	var image = '=image(B' + i + ',1)';
 	var imagecell = sheet.getRange("C"+i);
 	imagecell.setValue(image);
     
@@ -60,7 +60,7 @@ function callImageSearch() {
 	ISBNlinkcell.setValue(ISBNURL);
     
         // Sets the row to a height of 100 pixels so we can see the image
-	sheet.setRowHeight(i, 100);
+	sheet.setRowHeight(i, 200);
 
 	//clear the variables
 	locURL = "";
