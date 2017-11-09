@@ -68,10 +68,10 @@ var userList = new List('books', options);
 7. Instead of putting our content at the end point, we can add it to the Web App. 
 8. Save your files. *[Remember you may have to authorize your script.](../authorize.md)* 
 9. Now click on the Publish -> Deploy as web app menu. 
-![Image of publish popup](publish.png)
+<img src="publish.png" width="48">
 10. See Google's help for [details about each setting](https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web_app), but most remain at their defaults. Typically, you should create a new version each time you publish to ensure your Web App gets updated.
 11. Now we can open the apps URL.
-![Image of web app](web_app.png)
+<img src="web_app.png" width="48">
 12. Copy the URL and paste it into a new browser window
 ![Image of using web app](web_app_new_book.png)
 13. You can also use an iframe tag to embed the Web App in a web page
@@ -82,131 +82,6 @@ Or in a LibGuide:
 ![Image of web app libguide](libguide.png)
 
 Excersize???
-
-
-
-
-
-5. Copy in this code overwriting everything that is there:<br />
-```javascript
-
-function callImageSearch() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getActiveSheet();
-  
-  var cell = sheet.getRange("D1");
-  cell.setValue("ImageURL");
-  
-  var cell = sheet.getRange("E1");
-  cell.setValue("RecordLink");
-  
-  //Loop through Column A, getting the ISBN numbers
-  for (var i = 2; i < 500; i++) {
-    
-	var ISBNNumber = sheet.getRange(i,1).getValue();
-	Logger.log('ISBNNumber: ' + ISBNNumber);
-    
-	// if the value is blank, no more ISBN Numbers! Break out!
-	if (ISBNNumber == "") { break; }
-        
-        //example url: https://fakecatalog.wordpress.com/hij18842f532/
-	var ISBNURL = 'https://fakecatalog.wordpress.com/' + ISBNNumber + '/';
-	var html = UrlFetchApp.fetch(ISBNURL).getContentText();
-    
-	if (html) {
-  	  if (html.indexOf('zfr3Q JYVBee') >= 0) {
-    	  // Image is present
-    	  var locURL = html.indexOf('zfr3Q JYVBee');
-    	  var locSpace = html.indexOf('img',locURL);
-    	  var localURL = html.substring(locURL+23,locSpace-3)
-  	  } else {
-      	  var localURL = "No Image";
-  	  }
-	}
-	Logger.log('locURL: ' +locURL);
-	Logger.log('locSpace: ' +locSpace);
-	Logger.log('localURL: ' +localURL);   
-
-	var cell = sheet.getRange("D"+i);
-	cell.setValue(localURL);
-  
-	var ISBNlinkcell = sheet.getRange("E"+i);
-	ISBNlinkcell.setValue(ISBNURL);
-    
-	//clear the variables
-	locURL = "";
-	locSpace = "";
-	localURL = "";
-
-  }
-}
-//Run once to create the menu to run from the sheet!
-function onOpen() {
-  var ui = SpreadsheetApp.getUi();
-  ui.createMenu('Scrape the Web')
-  	.addItem('Get Image URLs from ISBN Numbers in col A','callImageSearch')
-  	.addToUi();
-}
-```
-6. This is the code we created from Lesson 6 but changed a little for this lesson. 
-7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
-8. Now you can run the custom menu function to get the image and record URL. This is just like Lesson 6, we are just changing the formatting.<br /><br />
-![Image of Image Data](gsheet_data.png)
-9. Now we're going to create a new book list using this data. To do so, we'll utilize a JavaScript library called [List.js](http://listjs.com/). This library takes an HTML list index and can create a simple search and sort interface for our new book list webpage.<br /><br />
-![Image of li tag](list.png)
-10. Let's start by concatenating our data into li tags. In our Google Sheet enter this into cell F2:
-```
-=CONCATENATE("<li><img width='10%' src='", D2, "' /><a class='title' href='", E2,"'> ", C2, "</a> by ", B2, "</li>")
-```
-11. This code will string together our data with some HTML tags to create a list. Highlight cells F2:F7 and press cmd+D or ctrl+D to fill down the formula.
-12. In your favorite text editor, enter in this code to create a HTML file that will use the List.js library and our HTML data to create a new book page:
-```
-<!DOCTYPE html>
-<html>
-  <head>
-    <base target="_top">  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-  </head>
-  <body>
-    <div class="container">
-    <div id="books">
-
-<!-- class="search" automagically makes an input a search field. -->
-  <input class="search" placeholder="Search" />
-<!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-  <button class="sort" data-sort="title">
-    Sort
-  </button>
-
-<!-- Child elements of container with class="list" becomes list items -->
-  <ul class="list">
-    
-    <!-- LIST INDEX HERE!!!! -->
-    
-  </ul>
-</div>
-    
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-  <script>
-  
-  var options = {
-  valueNames: [ 'title' ]
-};
-
-var userList = new List('books', options);
-
-</script>
-</div>
-  </body>
-</html>
-
-```
-10. Save your file to your Desktop. 
-11. Copy the values from F2:F7 in your Google Sheet into the UL list object where it says "LIST INDEX HERE". 
-12. Save and then open the file in a browser. You should see a nice new book list:
-![Image of final new book list](booklist.png)
-13. Test the New Book List by clicking on the sort and searching for 'oval'.
 
 ## Final Google Sheet
 
