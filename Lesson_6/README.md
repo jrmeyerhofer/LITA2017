@@ -15,7 +15,7 @@ mno545558501
 rst824713975
 xyz582528202
 ```
-4. Click on Tools menu and choose Script Editor. 
+4. Click on the Tools menu and choose Script Editor. 
 5. Copy in this code overwriting everything that is there:
 ```javascript
 function callImageSearch() {
