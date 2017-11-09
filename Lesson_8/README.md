@@ -68,11 +68,12 @@ var userList = new List('books', options);
 7. Instead of putting our content at the end point, we can add it to the Web App. 
 8. Save your files. *[Remember you may have to authorize your script.](../authorize.md)* 
 9. Now click on the Publish -> Deploy as web app menu. 
-<<image>>
+![Image of publish popup](publish.png)
 10. See Google's help for [details about each setting](https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web_app), but most remain at their defaults. Typically, you should create a new version each time you publish to ensure your Web App gets updated.
 11. Now we can open the apps URL.
-<<image>>
-
+![Image of web app](web_app.png)
+12. Copy the URL and paste it into a new browser window
+<>image<>
 
 
 
