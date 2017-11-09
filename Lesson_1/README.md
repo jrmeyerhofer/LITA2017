@@ -11,7 +11,7 @@ What can you do? Add a menu to a sheet, build a stand-alone application, or crea
 ## Lesson Steps
 
 1. Open Google Drive: https://drive.google.com
-2. Create a new GAS file by clicking the New button -> More -> Google Apps Script
+2. Create a new GAS file by clicking the New button -> More -> Google Apps Script. If you don't see GAS, click on the Connect more apps link and search for Google. You should see Google Apps Script. Click the Connect button.
 3. Note the Google Doc like environment
 4. Name our file: "LITA 2017 Test script (Lesson 1)"
 5. Examine the File menu:<br/>
