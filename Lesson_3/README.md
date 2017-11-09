@@ -42,6 +42,7 @@ function buttonClick() {
 10. Click on the three veritcal dots to Assign a Script *Tip: enter the function without the parens like "buttonClick"<br /><br />
 ![Image of assign](assign.png)
 10. **Excersize (5 min):** Add an image to your sheet and assign a funtion to it. *Tip: easily add an image by URL: https://source.unsplash.com/random*
+11. *Tip: the three dots may be hard to find, especially if you've already assigned a script or the image is dark and hides them. Use the right-click to select the item without clicking on it, then look for them in the upper right of the object.
 
 ## Final Google Sheet
 
