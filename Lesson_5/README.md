@@ -22,6 +22,14 @@ function getOAAPIDOI()
     
     var email_key = 'youremail@test.com'; 
     var DOInumber = sheet.getRange("A1").getValue();
+    
+    // if the value is blank, break out!
+	if (DOInumber == "") { 
+      var cell = sheet.getRange("B1");
+      cell.setValue("NO DOI in cell A1");
+      return; 
+    }
+    
     DOInumber = DOInumber.trim();
     var cell = sheet.getRange("A1");
     cell.setValue(DOInumber);
