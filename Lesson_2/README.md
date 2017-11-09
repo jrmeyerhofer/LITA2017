@@ -6,7 +6,7 @@ In this lesson we'll create our own function in a Google Sheet.
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 Custom Function (Lesson 2)"
-3. Click on Tools menu and choose Script Editor - This opens a script file that is associated with the sheet we just created. This is what’s called a bound script. 
+3. Click on the Tools menu and choose Script Editor - This opens a script file that is associated with the sheet we just created. This is what’s called a bound script. 
 >“A script is bound to a Google Sheets, Docs, or Forms file if it was created from that document rather than as a standalone script. The file a bound script is attached to is referred to as a "container". Bound scripts generally behave like standalone scripts except that they do not appear in Google Drive, they cannot be detached from the file they are bound to, and they gain a few special privileges over the parent file.”
 4. Copy in this code overwriting everything that is there:
 ```javascript
