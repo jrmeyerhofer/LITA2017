@@ -6,7 +6,7 @@ In this lesson we'll create a custom input window (sidebar) in a Google Doc.
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Doc and name our file: "LITA 2017 Custom Sidebar (Lesson 4)"
-3. Click on Tools menu and choose Script Editor. 
+3. Click on the Tools menu and choose Script Editor. 
 4. Copy in this code overwriting everything that is there:
 ```javascript
 function showSidebarWindow() {
