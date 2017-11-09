@@ -122,7 +122,7 @@ Finally, we navigate the JSON file, and get the value of the doi and put it in c
 11. **Excersize (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL value?
 12. **Challenge Excersize (10 min):** Can you call the [Crossref API](https://github.com/CrossRef/rest-api-doc) and extract its data? Example: https://api.crossref.org/works/10.1037/0003-066X.59.1.29
 
-**Note: This is just one of the many APIs you can call from GAS. In some cases you may need a [key](https://en.wikipedia.org/wiki/Application_programming_interface_key) to performa a call. More APIs can be found at https://apilist.fun/ and https://github.com/toddmotto/public-apis.**
+**Note: This is just one of the many APIs you can call from GAS. In some cases you may need a [key](https://en.wikipedia.org/wiki/Application_programming_interface_key) to perform a call. More APIs can be found at https://apilist.fun/ and https://github.com/toddmotto/public-apis. Your catalog may have one too!**
 
 ## Final Google Sheet
 
