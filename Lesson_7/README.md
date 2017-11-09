@@ -82,7 +82,7 @@ function onOpen() {
 6. This is the code we created from Lesson 6 but changed a little for this lesson. 
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 8. Now you can run the custom menu function, Scrape the Web, to get the image and record URL. This is just like Lesson 6, we are just changing the formatting.<br /><br />
-![Image of Image Data](gsheet_data.png)
+![Image of Image Data](just_images.png)
 9. Now we're going to create a new book list using this data. To do so, we'll utilize a JavaScript library called [List.js](http://listjs.com/). This library takes an HTML list index and can create a simple search and sort interface for our new book list webpage.<br /><br />
 ![Image of li tag](list.png)
 10. Let's start by concatenating our data into li tags. In our Google Sheet enter this into cell F2:
@@ -90,6 +90,8 @@ function onOpen() {
 =CONCATENATE("<li><img width='10%' src='", D2, "' /><a class='title' href='", E2,"'> ", C2, "</a> by ", B2, "</li>")
 ```
 11. This code will string together our data with some HTML tags to create a list. Highlight cells F2:F7 and press cmd+D or ctrl+D to fill down the formula.
+<br /><br />
+![Image of Image Data](gsheet_data.png)
 12. In your favorite text editor, enter in this code to create a HTML file that will use the List.js library and our HTML data to create a new book page:
 ```
 <!DOCTYPE html>
