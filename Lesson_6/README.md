@@ -59,8 +59,9 @@ function callImageSearch() {
 	var ISBNlinkcell = sheet.getRange("D"+i);
 	ISBNlinkcell.setValue(ISBNURL);
     
-        // Sets the row to a height of 100 pixels so we can see the image
+        // Sets the row to a height and width so we can see the image
 	sheet.setRowHeight(i, 200);
+        sheet.setColumnWidth(3, 175);
 
 	//clear the variables
 	locURL = "";
