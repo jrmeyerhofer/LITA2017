@@ -94,9 +94,9 @@ var localURL = html.substring(locURL+23,locSpace-3)
 ```
 This is a perfect example why scraping a website is an inexact science and APIs are a much better option! With the URL, we write out the data and image into the sheet.<br /><br />
 9. **Excersize (15 min):** Get the image url from http://www.worldcat.org/title/little-life-a-novel/oclc/886672369. Some tips: Google Dev Tools can help find or select HTML elements. Find a unique tag or string before and after the image url. For example, in the previous steps, we used the dev tools to find the image url:<br /><br />
-![Image of isbn](isbn.png)<br /><br />
+![Image of isbn](google_dev.png)<br /><br />
 Then looked for a unique string before and after the image URL:<br /><br />
-![Image of tags](tags.png)
+![Image of tags](find_code.png)
 
 ## Final Google Sheet
 
