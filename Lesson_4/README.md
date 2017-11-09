@@ -1,4 +1,4 @@
-# Lesson Four - Sidebar
+# Lesson 4 - Sidebar
 
 In this lesson we'll create a custom input window (sidebar) in a Google Doc.
 
