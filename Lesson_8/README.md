@@ -4,10 +4,10 @@ In this lesson we'll create a new Google Apps Script Web App.
 
 ## Lesson Steps
 
-In the previous lesson, we built a New Book page. It was nice and functional, but requires us to regenerate new HTML every time we added new data and to update our webpage. With GAS Web Apps we can create a script that will dynamically include content in a webpage.
+In the previous lesson, we built a New Book page. It was nice and functional, but requires us to update our display HTML file every time we add new data. With GAS Web Apps we can create a script that will dynamically include content in a webpage instead.
 
 1. Open Google Drive: https://drive.google.com
-2. **Copy** your Google Sheet from Lesson 7. If you didn't have time to finish you can copy the final version listed at the bottom.
+2. **Copy** your Google Sheet from [Lesson 7](../Lesson_7/). If you didn't have time to finish, copy the final version listed at the bottom.
 3. Click on the Tools menu and choose Script Editor.<br /> 
 4. Add this code to your existing code.
 ```javascript
@@ -69,7 +69,9 @@ var userList = new List('books', options);
 8. Save your files. *[Remember you may have to authorize your script.](../authorize.md)* 
 9. Now click on the Publish -> Deploy as web app menu. 
 <<image>>
-10. See Google's help for [details about each setting](https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web_app).
+10. See Google's help for [details about each setting](https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web_app), but most remain at their defaults. Typically, you should create a new version each time you publish to ensure your Web App gets updated.
+11. Now we can open the apps URL.
+<<image>>
 
 
 
