@@ -6,7 +6,7 @@ In this lesson we'll learn how to scrape a website. We are going to scrape a fak
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 Scrape (Lesson 6)"
-3. Copy this into your sheet (these are our pretend ISBNs):
+3. Copy this into your sheet in cells A1:A6 (these are our pretend ISBNs):
 ```
 abc321465498
 hij18842f532
