@@ -1,4 +1,4 @@
-# Lesson Two - Create your own function
+# Lesson 2 - Create your own function
 
 In this lesson we'll create our own function in a Google Sheet.
 
