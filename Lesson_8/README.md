@@ -78,7 +78,7 @@ var userList = new List('books', options);
 ```
 Or in a LibGuide:
 ![Image of web app libguide](libguide.png)
-13. **Excersize (5 min):** Add another row of data re-publish your app. Did you see it represented in your webpage or LibGuide?
+13. **Exercise (5 min):** Add another row of data re-publish your app. Did you see it represented in your webpage or LibGuide?
 <br /><br />
 *Interested in pushing Google Apps Script even further? Check out [HTML Service: Communicate with Server Functions](https://developers.google.com/apps-script/guides/html/communication) to learn about communicating between webpages, your user, and Google Apps Script.*
 
