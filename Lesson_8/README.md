@@ -73,7 +73,16 @@ var userList = new List('books', options);
 11. Now we can open the apps URL.
 ![Image of web app](web_app.png)
 12. Copy the URL and paste it into a new browser window
-<>image<>
+![Image of using web app](web_app_new_book.png)
+13. You can also use an iframe tag to embed the Web App in a web page
+```
+<iframe frameborder="0" src="https://script.google.com/a/meyerhofer.com/macros/s/AKfycbxNtxCOK_NB_BKGiPL9GXlpUNzmyFS2XhCFObLVtqv3_Jgzdto/exec" style="width: 625px; height: 800px;"></iframe>
+```
+Or in a LibGuide:
+![Image of web app libguide](libguide.png)
+
+Excersize???
+
 
 
 
