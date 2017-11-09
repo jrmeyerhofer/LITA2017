@@ -29,6 +29,7 @@ Hello, world! <input type="button" value="Close" onclick="google.script.host.clo
 ## Final Google Sheet
 
 https://docs.google.com/document/d/1IyrinPgOSSnMaBgHfOkfuJPt_FG5Cd-QqNTP7qj_E6k/edit?usp=sharing
+*Don't try to run this script, you'll get an [error](../autherror.png). Copy the code and run it in your own Google Drive.*
 
 ## Resource list
 
