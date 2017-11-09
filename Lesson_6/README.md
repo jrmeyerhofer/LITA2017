@@ -1,11 +1,11 @@
-# Lesson Six - Scraping the web
+# Lesson 6 - Scraping the web
 
 In this lesson we'll learn how to scrape a website. We are going to scrape a fake catalog for book cover images. This is so we don't overload any of the real catalogs and possibliy make them block us. Here is the Fake Book Site: https://sites.google.com/meyerhofer.com/lita2017/home 
 
 ## Lesson Steps
 
 1. Open Google Drive: https://drive.google.com
-2. Create a new Google Sheet and name our file: "LITA 2017 Scrape (Lesson Six)"
+2. Create a new Google Sheet and name our file: "LITA 2017 Scrape (Lesson 6)"
 3. Copy this into your sheet (these are our pretend ISBNs):
 ```
 abc321465498
