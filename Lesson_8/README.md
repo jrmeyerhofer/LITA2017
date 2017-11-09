@@ -4,20 +4,77 @@ In this lesson we'll create a new Google Apps Script Web App.
 
 ## Lesson Steps
 
-1. Open Google Drive: https://drive.google.com
-2. Create a new Google Sheet and name our file: "LITA 2017 New Book List (Lesson 7)"
-3. Copy this into your sheet (this is our pretend new book data):
-<table>
-<tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
-<tr><td>abc321465498</td><td>Zeus</td><td>The Big Book of Number 1s</td></tr>
-<tr><td>hij18842f532</td><td>Apollo</td><td>The Big Book of Stars</td></tr>
-<tr><td>lmn458137952</td><td>Athena</td><td>The Big Book of Long Ovals</td></tr>
-<tr><td>mno545558501</td><td>Demeter</td><td>The Big Book Vertical Ovals</td></tr>
-<tr><td>rst824713975</td><td>Poseidon</td><td>The Big Book of Rectangles</td></tr>
-<tr><td>xyz582528202</td><td>Hera</td><td>The Big Book of Polygons</td></tr>
-</table>
+In the previous lesson, we built a New Book page. It was nice and functional, but requires us to regenerate new HTML every time we added new data and to update our webpage. With GAS Web Apps we can create a script that will dynamically include content in a webpage.
 
-4. Click on Tools menu and choose Script Editor.<br /> 
+1. Open Google Drive: https://drive.google.com
+2. **Copy** your Google Sheet from Lesson 7. If you didn't have time to finish you can copy the final version listed at the bottom.
+3. Click on the Tools menu and choose Script Editor.<br /> 
+4. Add this code to your existing code.
+```javascript
+function doGet() {
+  var html = HtmlService.createTemplateFromFile('books').evaluate()
+            .setTitle('web app').setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+  return html;
+  
+}
+```
+5. The doGet function is a special function that tells the script how to serve the page to who ever calls our Web App. The function creates a template from the 'books' file. Then it sends it back to the application that called. it.
+6. Let's create out 'books' File. Click File -> New -> Html file and replace the existing code with this:
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+    <div id="books">
+
+<!-- class="search" automagically makes an input a search field. -->
+  <input class="search" placeholder="Search" />
+<!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
+  <button class="sort" data-sort="title">
+    Sort
+  </button>
+
+<!-- Child elements of container with class="list" becomes list items -->
+  <ul class="list">
+    <li><img width='10%' src='https://fakecatalog.files.wordpress.com/2017/11/book1.png' /><a class='title' href='https://fakecatalog.wordpress.com/abc321465498/'> The Big Book of Number 1s</a> by Zeus</li>
+<li><img width='10%' src='https://fakecatalog.files.wordpress.com/2017/11/book2.png' /><a class='title' href='https://fakecatalog.wordpress.com/hij18842f532/'> The Big Book of Stars</a> by Apollo</li>
+<li><img width='10%' src='https://fakecatalog.files.wordpress.com/2017/11/book31.png' /><a class='title' href='https://fakecatalog.wordpress.com/lmn458137952/'> The Big Book of Long Ovals</a> by Athena</li>
+<li><img width='10%' src='https://fakecatalog.files.wordpress.com/2017/11/book4.png' /><a class='title' href='https://fakecatalog.wordpress.com/mno545558501/'> The Big Book Vertical Ovals</a> by Demeter</li>
+<li><img width='10%' src='https://fakecatalog.files.wordpress.com/2017/11/book5.png' /><a class='title' href='https://fakecatalog.wordpress.com/rst824713975/'> The Big Book of Rectangles</a> by Poseidon</li>
+<li><img width='10%' src='https://fakecatalog.files.wordpress.com/2017/11/book6.png' /><a class='title' href='https://fakecatalog.wordpress.com/xyz582528202/'> The Big Book of Polygons</a> by Hera</li>
+    
+  </ul>
+</div>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script>
+  
+  var options = {
+  valueNames: [ 'title' ]
+};
+
+var userList = new List('books', options);
+
+</script>
+</div>
+  </body>
+</html>
+```
+7. Instead of putting our content at the end point, we can add it to the Web App. 
+8. Save your files. *[Remember you may have to authorize your script.](../authorize.md)* 
+9. Now click on the Publish -> Deploy as web app menu. 
+<<image>>
+10. See Google's help for [details about each setting](https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web_app).
+
+
+
+
+
 5. Copy in this code overwriting everything that is there:<br />
 ```javascript
 
@@ -148,4 +205,7 @@ https://docs.google.com/spreadsheets/d/1pQVokR_X-3utnx-7DKEizhxXXk5WdjCBU1MB0ObB
 
 Main GAS documentation: https://developers.google.com/apps-script/
 
-List.js: http://listjs.com/
+Web Apps: https://developers.google.com/apps-script/guides/web
+
+HTML Service: https://developers.google.com/apps-script/guides/html/
+
