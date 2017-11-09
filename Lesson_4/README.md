@@ -24,7 +24,7 @@ function showSidebarWindow() {
 Hello, world! <input type="button" value="Close" onclick="google.script.host.close()" />
 ```
 8. Save and name your file 'sidebar'.
-9. **Excersize (5 min):** How might we call this function when a user opens this Doc? Implement this code, save, close your file and test that opening the Doc shows the sidebar.
+9. **Excersize (5 min):** How might we call this function when a user opens this Doc? Implement this code, save, and close your GDoc file. Test by opening the GDoc.
 
 ## Final Google Sheet
 
