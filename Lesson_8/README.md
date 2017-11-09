@@ -17,8 +17,8 @@ function doGet() {
   return html;
 }
 ```
-5. The doGet function is a special function that tells the script how to serve the page to who ever calls our Web App. The function creates a template from the 'books' file. Then it sends it back to the application that called. it.
-6. Let's create out 'books' File. Click File -> New -> Html file and replace the existing code with this:
+5. The doGet() function is a special function that tells the script how to serve the content to who ever calls our Web App. The function creates a template from the 'books' file. Then sends it back to the application that called it.
+6. Let's create our 'books' File. Click File -> New -> Html file and replace the existing code with this:
 ```
 <!DOCTYPE html>
 <html>
