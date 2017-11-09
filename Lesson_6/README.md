@@ -79,7 +79,7 @@ function onOpen() {
 ```
 6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 7. Back in the sheet, run the new menu option to Scrape the Web. You should see this:<br /><br />
-![Image of images](images.png)
+![Image of images](bookimages.png)
 8. Let's look at the code to see what it's doing:<br />
 First, we get the active sheet, and loop through the ISBN numbers in col A. Then we get the URL and fetch it.
 ```
