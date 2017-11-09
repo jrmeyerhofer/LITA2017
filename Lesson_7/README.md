@@ -81,7 +81,7 @@ function onOpen() {
 ```
 6. This is the code we created from Lesson 6 but changed a little for this lesson. 
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
-8. Now you can run the custom menu function to get the image and record URL.<br /><br />
+8. Now you can run the custom menu function to get the image and record URL. This is just like Lesson 6, we are just changing the formatting.<br /><br />
 ![Image of Image Data](gsheet_data.png)
 9. Now we're going to create a new book list using this data. To do so, we'll utilize a JavaScript library called [List.js](http://listjs.com/). This library takes an HTML list index and can create a simple search and sort interface for our new book list webpage.<br /><br />
 ![Image of li tag](list.png)
