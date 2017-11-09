@@ -7,7 +7,7 @@ In this lesson we'll create a new Google Apps Script Web App.
 In the previous lesson, we built a New Book page. It was nice and functional, but requires us to update our display HTML file every time we add new data. With GAS Web Apps we can create a script that will dynamically include content in a webpage instead.
 
 1. Open Google Drive: https://drive.google.com
-2. **Copy** your Google Sheet from [Lesson 7](../Lesson_7/). If you didn't have time to finish, copy the final version listed at the bottom. Name it: LITA 2017 New Book List Web App (Lesson 8).
+2. **Copy** your Google Sheet from [Lesson 7](../Lesson_7/). If you didn't have time to finish, copy the final version listed at the bottom. Name it: "LITA 2017 New Book List Web App (Lesson 8)".
 3. Click on the Tools menu and choose Script Editor.<br /> 
 4. Add this code to your existing code.
 ```javascript
