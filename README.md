@@ -9,17 +9,17 @@ Please have a Google account and if you have a laptop, please bring it.
 
 **Note:** During these lessons, you may have to authorize your script(s). [Learn more.](authorize.md)
 
-**[Lesson One - Getting Orientated](/Lesson_1/)**<br />In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment. 
+**[Lesson 1 - Getting Orientated](/Lesson_1/)**<br />In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment. 
 
-**[Lesson Two - Create your own function](/Lesson_2/)**<br />In this lesson we'll create our own function in a Google Sheet.
+**[Lesson 2 - Create your own function](/Lesson_2/)**<br />In this lesson we'll create our own function in a Google Sheet.
 
-**[Lesson Three - Create a custom menu](/Lesson_3/)**<br />In this lesson we'll create our own menu in a Google Sheet.
+**[Lesson 3 - Create a custom menu](/Lesson_3/)**<br />In this lesson we'll create our own menu in a Google Sheet.
 
-**[Lesson Five - Calling APIs](/Lesson_5/)**<br />In this lesson we'll call an API from a Google Sheet.
+**[Lesson 5 - Calling APIs](/Lesson_5/)**<br />In this lesson we'll call an API from a Google Sheet.
 
-**[Lesson Six - Scraping the web](/Lesson_6/)**<br />In this lesson we'll scrape a website for content.
+**[Lesson 6 - Scraping the web](/Lesson_6/)**<br />In this lesson we'll scrape a website for content.
 
-**[Lesson Seven - Building a New Book page](/Lesson_7/)**<br />In this lesson we'll build a new book webpage.
+**[Lesson 7 - Building a New Book page](/Lesson_7/)**<br />In this lesson we'll build a new book webpage.
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
