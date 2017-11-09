@@ -35,3 +35,6 @@ https://docs.google.com/document/d/1IyrinPgOSSnMaBgHfOkfuJPt_FG5Cd-QqNTP7qj_E6k/
 Main GAS documentation: https://developers.google.com/apps-script/
 
 Dialogs and Sidebars: https://developers.google.com/apps-script/guides/dialogs
+
+Class Ui: https://developers.google.com/apps-script/reference/base/ui
+
