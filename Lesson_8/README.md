@@ -7,7 +7,7 @@ In this lesson we'll create a new Google Apps Script Web App.
 In the previous lesson, we built a New Book page. It was nice and functional, but requires us to update our display HTML file every time we add new data. With GAS Web Apps we can create a script that will dynamically include content in a webpage instead.
 
 1. Open Google Drive: https://drive.google.com
-2. **Copy** your Google Sheet from [Lesson 7](../Lesson_7/). If you didn't have time to finish, copy the final version listed at the bottom.
+2. **Copy** your Google Sheet from [Lesson 7](../Lesson_7/). If you didn't have time to finish, copy the final version listed at the bottom. Name it: LITA 2017 New Book List Web App (Lesson 8).
 3. Click on the Tools menu and choose Script Editor.<br /> 
 4. Add this code to your existing code.
 ```javascript
@@ -79,12 +79,13 @@ var userList = new List('books', options);
 ```
 Or in a LibGuide:
 ![Image of web app libguide](libguide.png)
-
-Excersize???
+14. **Excersize (5 min):** Add another row of data re-publish your app. Did you see it represented in your webpage or LibGuide?
+<br /><br />
+*Interested in pushing Google Apps Script even further? Check out [HTML Service: Communicate with Server Functions](https://developers.google.com/apps-script/guides/html/communication) to learn about communicating between webpages, your user, and Google Apps Script.*
 
 ## Final Google Sheet
 
-https://docs.google.com/spreadsheets/d/1pQVokR_X-3utnx-7DKEizhxXXk5WdjCBU1MB0ObBvh0/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1ilFmn1fQ_ZvCcYV2tifZNOgSslbfGvHgzvxhkDXEw0A/edit?usp=sharing
 *Don't try to run this script, you'll get an [error](../autherror.png). Copy the code and run it in your own Google Drive.*
 
 ## Resource list 
