@@ -101,6 +101,7 @@ Then looked for a unique string before and after the image URL:<br /><br />
 ## Final Google Sheet
 
 https://docs.google.com/spreadsheets/d/10B6sOAaJeiwFKPTQyzoV87oLRwBZUA0ogrvLazU2JHw/edit?usp=sharing
+*Don't try to run this script, you'll get an [error](../autherror.png). Copy the code and run it in your own Google Drive.*
 
 ## Resource list
 
