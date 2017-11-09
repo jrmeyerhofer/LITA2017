@@ -35,13 +35,13 @@ function buttonClick() {
 5. Save and name your script. *[Remember you may have to authorize your script.](../authorize.md)* This code will add a custom menu to our sheet with a menu item and a sub-menu. You can see where it designates the name and then the function that will run when that menu is clicked. 
 6. Manually run the onOpen() function. *Note: onOpen() is a special function called a simple trigger and will normally run when a user opens a spreadsheet, document, or form.* If you look at your sheet, you will now have a new menu.<br /><br />
 ![Image of Menu](custom_menu.png)
-7. Click on one of the menus and it will run the appropriate funtion - *menuOne() or menuTwo()*:<br /><br />
+7. Click on one of the menus and it will run the appropriate function - *menuOne() or menuTwo()*:<br /><br />
 ![Image of Popup](popup.png)
-8. **Excersize (5 min):** Create another menu item and put it anywhere in your menu. *Make sure to create a function that gets triggered when it runs!* Rather then re-run the onOpen function manually, what happens if you save the script, close your sheet and then open it back up?
+8. **Exercise (5 min):** Create another menu item and put it anywhere in your menu. *Make sure to create a function that gets triggered when it runs!* Rather then re-run the onOpen function manually, what happens if you save the script, close your sheet and then open it back up?
 9. You can also assign a function to an image or drawing. Back in our sheet, click the Insert -> Drawing menu. Add a rectangular shape to our sheet. 
-10. Click on the three veritcal dots to Assign a Script *Tip: enter the function without the parens like "buttonClick"<br /><br />
+10. Click on the three vertical dots to Assign a Script *Tip: enter the function without the parens like "buttonClick"<br /><br />
 ![Image of assign](assign.png)
-10. **Excersize (5 min):** Add an image to your sheet and assign a funtion to it. *Tip: easily add an image by URL: https://source.unsplash.com/random*
+10. **Exercise (5 min):** Add an image to your sheet and assign a function to it. *Tip: easily add an image by URL: https://source.unsplash.com/random*
 11. *Tip: the three dots may be hard to find, especially if you've already assigned a script or the image is dark and hides them. Use the right-click to select the item without clicking on it, then look for them in the upper right of the object.
 
 ## Final Google Sheet
