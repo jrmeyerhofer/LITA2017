@@ -31,9 +31,9 @@ function myFunction() {
   Logger.log("myTestVar is: " + myTestVar);
 }
 ```
-10. Save the project with the disk icon or File -> Save. *[Remember you may have to authorize your script](../authorize.md)*
+10. Change myTestVar to have your name (we want you to be cool). Save the project with the disk icon or File -> Save. *[Remember you may have to authorize your script](../authorize.md)*
 11. Examine the Run menu - You can run just a single function which can help for testing, or debug a single function.<br/>
-12. Run the function: myFunction()
+12. Run the function: myFunction(), via the Run menu.
 13. Examine the View menu:<br/>
 "Execution Transcript" shows you all the events and things that happened during the execution.<br/>
 "Logs" is where you can see what was output with the Logger. This is a helpful way to debug or troubleshoot problems.<br/>
