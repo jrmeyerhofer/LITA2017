@@ -90,7 +90,7 @@ function onOpen() {
 =CONCATENATE("<li><img width='10%' src='", D2, "' /><a class='title' href='", E2,"'> ", C2, "</a> by ", B2, "</li>")
 ```
 11. This code will string together our data with some HTML tags to create a list. Highlight cells F2:F7 and press cmd+D or ctrl+D to fill down the formula.
-12. In your favorite text editor, enter in this code to create our HTML file:
+12. In your favorite text editor, enter in this code to create a HTML file that will use the List.js library and our HTML data to create a new book page:
 ```
 <!DOCTYPE html>
 <html>
@@ -134,7 +134,7 @@ var userList = new List('books', options);
 
 ```
 10. Save your file to your Desktop. 
-11. Copy the values from F2:F7 in your Google Sheet into the UL list object where it says LIST INDEX HERE. 
+11. Copy the values from F2:F7 in your Google Sheet into the UL list object where it says "LIST INDEX HERE". 
 12. Save and then open the file in a browser. You should see a nice new book list:
 ![Image of final new book list](booklist.png)
 13. Test the New Book List by clicking on the sort and searching for 'oval'.
