@@ -118,7 +118,7 @@ Finally, we navigate the JSON file, and get the value of the doi and put it in c
 8. Now with the knowledge of what the code is doing, we can go back to our sheet and enter a DOI in cell A1 (ex. 10.1088/0004-637x/812/2/158).
 9. Click the menu to "Call oaAPI". You should see:<br /><br /> 
 ![Image of the Results](oaapi.png)
-10. **Excersize (5 min):** Try other DOIs. Do you always get the same values back? What's different? Why is it different? Ready more about oaDOI's API DOI object: https://oadoi.org/api/v2#doi-object
+10. **Excersize (5 min):** Try other DOIs. Do you always get the same values back? What's different? Why is it different? Read more about oaDOI's API DOI object: https://oadoi.org/api/v2#doi-object
 11. **Excersize (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL value?
 12. **Challenge Excersize (10 min):** Can you call the [Crossref API](https://github.com/CrossRef/rest-api-doc) and extract its data? Example: https://api.crossref.org/works/10.1037/0003-066X.59.1.29
 
