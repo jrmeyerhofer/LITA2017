@@ -8,7 +8,7 @@ In this lesson we'll learn how to call APIs from a Google Apps Script and call t
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 API (Lesson 5)"
-3. Click on Tools menu and choose Script Editor. 
+3. Click on the Tools menu and choose Script Editor. 
 4. Copy in this code overwriting everything that is there:
 ```javascript
 function getOAAPIDOI()
