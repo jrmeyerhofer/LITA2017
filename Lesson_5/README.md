@@ -4,7 +4,7 @@ In this lesson we'll learn how to call APIs from a Google Apps Script and call t
 
 ## Lesson Steps
 
-**Background:** Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158. This has called the oaDOI API (https://oadoi.org/api) returning JSON data about that DOI. This API gives us access to oaDOI's data about DOIs and their details. We are going to create a simple application that will take a DOI input, call the oaDOI API, and display the data we get back. Remember, when calling APIs, to follow their rules. Many times you'll need a key or to pass an identifier with the call. Also, call APIs responsibily by spacing your calls if you can.
+**Background:** Open this URL in a browser window: https://api.oadoi.org/10.1088/0004-637x/812/2/158. This has called the oaDOI API (https://oadoi.org/api) returning JSON data about that DOI. This API gives us access to oaDOI's data about DOIs and their details. We are going to create a simple application that will take a DOI input, call the oaDOI API, and display the data we get back. Remember, when calling APIs, to follow their rules. Many times you'll need a key or to pass an identifier with the call. Also, call APIs responsibility by spacing your calls if you can.
 
 1. Open Google Drive: https://drive.google.com
 2. Create a new Google Sheet and name our file: "LITA 2017 API (Lesson 5)"
@@ -16,7 +16,7 @@ function getOAAPIDOI()
     var ss = SpreadsheetApp.getActiveSpreadsheet();
     var sheet = ss.getActiveSheet();
   
-    //Status: Intialize
+    //Status: Initialize
     var cell = sheet.getRange("B1");
     cell.setValue("STATUS: Starting...");
     
@@ -76,7 +76,7 @@ function onOpen() {
       .addToUi();
 }
 ```
-5. First, you'll see something familar. The onOpen() function that will create a custom menu for us to run from our sheet. 
+5. First, you'll see something familiar. The onOpen() function that will create a custom menu for us to run from our sheet. 
 6. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 7. The other code is new, so let's walk through it:<br />
 This code gets the active sheet, then sets the value of cell B1. This is a nice way to visually see what the code is doing.
@@ -118,9 +118,9 @@ Finally, we navigate the JSON file, and get the value of the doi and put it in c
 8. Now with the knowledge of what the code is doing, we can go back to our sheet and enter a DOI in cell A1 (ex. 10.1088/0004-637x/812/2/158).
 9. Click the menu to "Call oaAPI". You should see:<br /><br /> 
 ![Image of the Results](oaapi.png)
-10. **Excersize (5 min):** Try other DOIs. Do you always get the same values back? What's different? Why is it different? Read more about oaDOI's API DOI object: https://oadoi.org/api/v2#doi-object
-11. **Excersize (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL value?
-12. **Challenge Excersize (10 min):** Can you call the [Crossref API](https://github.com/CrossRef/rest-api-doc) and extract its data? Example: https://api.crossref.org/works/10.1037/0003-066X.59.1.29
+10. **Exercise (5 min):** Try other DOIs. Do you always get the same values back? What's different? Why is it different? Read more about oaDOI's API DOI object: https://oadoi.org/api/v2#doi-object
+11. **Exercise (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL value?
+12. **Challenge Exercise (10 min):** Can you call the [Crossref API](https://github.com/CrossRef/rest-api-doc) and extract its data? Example: https://api.crossref.org/works/10.1037/0003-066X.59.1.29
 
 **Note: This is just one of the many APIs you can call from GAS. In some cases you may need a [key](https://en.wikipedia.org/wiki/Application_programming_interface_key) to perform a call. More APIs can be found at https://apilist.fun/ and https://github.com/toddmotto/public-apis. Your catalog may have one too!**
 
