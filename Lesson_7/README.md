@@ -133,7 +133,9 @@ var userList = new List('books', options);
 </html>
 
 ```
-10. Save your file to your Desktop and open it in a browser. You should see a nice new book list:
+10. Save your file to your Desktop. 
+11. Copy the values from F2:F7 in your Google Sheet into the UL list object where it says LIST INDEX HERE. 
+12. Save and then open the file in a browser. You should see a nice new book list:
 ![Image of final new book list](booklist.png)
 
 ## Final Google Sheet
