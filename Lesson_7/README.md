@@ -1,11 +1,11 @@
-# Lesson Seven - New Book List
+# Lesson 7 - New Book List
 
 In this lesson we'll create a new book list webpage.
 
 ## Lesson Steps
 
 1. Open Google Drive: https://drive.google.com
-2. Create a new Google Sheet and name our file: "LITA 2017 New Book List (Lesson Seven)"
+2. Create a new Google Sheet and name our file: "LITA 2017 New Book List (Lesson 7)"
 3. Copy this into your sheet (this is our pretend new book data):
 <table>
 <tr><td>ISBN</td><td>Author</td><td>Title</td></tr>
