@@ -127,6 +127,7 @@ Finally, we navigate the JSON file, and get the value of the doi and put it in c
 ## Final Google Sheet
 
 https://docs.google.com/spreadsheets/d/1k21QDclGmK1YGOiyPuOUq4_QnISM4OXmVr1qfFgOxSg/edit?usp=sharing
+*Don't try to run the script, you'll get an [error](../autherror.png). Copy the code and run it in your own Drive.*
 
 ## Resource list
 
