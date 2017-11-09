@@ -31,16 +31,16 @@ function callImageSearch() {
 	// if the value is blank, no more ISBN Numbers! Break out!
 	if (ISBNNumber == "") { break; }
         
-        //example url: https://sites.google.com/meyerhofer.com/lita2017/home/mno545558501-html
-	var ISBNURL = 'https://sites.google.com/meyerhofer.com/lita2017/home/' + ISBNNumber + '-html';
+        //example url: https://fakecatalog.wordpress.com/hij18842f532/
+	var ISBNURL = 'https://fakecatalog.wordpress.com/' + ISBNNumber + '/';
 	var html = UrlFetchApp.fetch(ISBNURL).getContentText();
- 
+    
 	if (html) {
-  	  if (html.indexOf('CENy8b') >= 0) {
+  	  if (html.indexOf('zfr3Q JYVBee') >= 0) {
     	  // Image is present
-    	  var locURL = html.indexOf('t3iYD');
-    	  var locSpace = html.indexOf('CENy8b',locURL);
-    	  var localURL = html.substring(locURL+17,locSpace-9)
+    	  var locURL = html.indexOf('zfr3Q JYVBee');
+    	  var locSpace = html.indexOf('img',locURL);
+    	  var localURL = html.substring(locURL+23,locSpace-3)
   	  } else {
       	  var localURL = "No Image";
   	  }
