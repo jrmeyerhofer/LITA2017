@@ -1,4 +1,4 @@
-# Lesson One - Getting Orientated
+# Lesson 1 - Getting Orientated
 
 In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment.
 
