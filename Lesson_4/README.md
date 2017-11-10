@@ -24,7 +24,7 @@ function showSidebarWindow() {
 Hello, world! <input type="button" value="Close" onclick="google.script.host.close()" />
 ```
 8. Save and name your file 'sidebar'.
-9. **Exercise (5 min):** How might we call this function when a user opens this Doc? Implement this code, save, and close your GDoc file. Test by opening the GDoc.
+9. **Exercise (10 min):** How might we call this function when a user opens this Doc? Implement this code, save, and close your GDoc file. Test by opening the GDoc.
 
 ## Final Google Sheet
 
@@ -38,4 +38,6 @@ Main GAS documentation: https://developers.google.com/apps-script/
 Dialogs and Sidebars: https://developers.google.com/apps-script/guides/dialogs
 
 Class Ui: https://developers.google.com/apps-script/reference/base/ui
+
+Class google.script.host (Client-side API): https://developers.google.com/apps-script/guides/html/reference/host
 
