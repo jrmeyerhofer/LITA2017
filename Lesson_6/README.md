@@ -98,6 +98,8 @@ This is a perfect example why scraping a website is an inexact science and APIs 
 ![Image of isbn](google_dev.png)<br /><br />
 Then looked for a unique string before and after the image URL:<br /><br />
 ![Image of tags](find_code.png)
+<br /><br />
+*Remember: Web scraping puts a large workload on targeted server and this can upset the data holder. Be polite and time your requests to add a delay between server hits. And check for an API first!*
 
 ## Final Google Sheet
 
