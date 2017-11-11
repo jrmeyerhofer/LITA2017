@@ -8,7 +8,7 @@ Allows you to create add-ons for Google Sheets, Docs, Slides, or Forms, automate
 
 What can you do? Add a menu to a sheet, build a stand-alone application, or create a container bound application in a Google Sheet or Docs. You can also run a GAS application as a web service - independ from interfaces - that can be called from elsewhere on the web.
 
-What can't you do? Google Apps scrips enforce quotas on the number of calls you can make. Keep this in mind when developing your script. See Quotas for Google Services at https://developers.google.com/apps-script/guides/services/quotas
+What can't you do? Google Apps scripts enforce quotas on the number of calls you can make. Keep this in mind when developing your script. See Quotas for Google Services at https://developers.google.com/apps-script/guides/services/quotas
 
 ## Lesson Steps
 
