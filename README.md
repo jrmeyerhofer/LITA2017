@@ -8,6 +8,7 @@ Please have a Google account and if you have a laptop, please bring it.
 <hr>
 
 **Note:** During these lessons, you may have to authorize your script(s). [Learn more.](authorize.md)
+Read the Code4Lib article that inspired this session: http://journal.code4lib.org/articles/12199
 
 **[Lesson 1 - Getting Orientated](/Lesson_1/)**<br />In this lesson we'll talk about what Google Apps Script (GAS) is, create our first script, and examine the development environment. 
 
