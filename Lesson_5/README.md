@@ -1,6 +1,6 @@
 # Lesson 5 - Calling APIs
 
-In this lesson we'll learn how to call APIs from a Google Apps Script and call the oaDOI API.
+In this lesson we'll learn how to call an API from a Google Apps Script and in particular call the oaDOI API.
 
 ## Lesson Steps
 
