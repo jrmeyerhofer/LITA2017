@@ -1,6 +1,6 @@
 # Lesson 6 - Scraping the web
 
-In this lesson we'll learn how to scrape a website. We are going to scrape a fake catalog for book cover images. This is so we don't overload any of 'real' catalogs and possibly make them block us. Here is the Fake Catalog Site: https://fakecatalog.wordpress.com/ 
+In this lesson we'll learn how to scrape a website. We are going to scrape a fake catalog for book cover images. This is so we don't overload any 'real' catalogs and possibly make them block us. Here is the Fake Catalog Site: https://fakecatalog.wordpress.com/ 
 
 ## Lesson Steps
 
