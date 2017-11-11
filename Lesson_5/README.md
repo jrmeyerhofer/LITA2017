@@ -120,7 +120,6 @@ Finally, we navigate the JSON string, and get the value of the doi and put it in
 ![Image of the Results](oaapi.png)
 10. **Exercise (5 min):** Try other DOIs. Do you always get the same values back? What's different? Why is it different? Read more about oaDOI's API DOI object: https://oadoi.org/api/v2#doi-object
 11. **Exercise (10-15 min):** Expand your script to get other individual values from the JSON string. Can you get the URL value?
-12. **Challenge Exercise (10 min):** Can you call the [Crossref API](https://github.com/CrossRef/rest-api-doc) and extract its data? Example: https://api.crossref.org/works/10.1037/0003-066X.59.1.29
 
 **Note: This is just one of the many APIs you can call from GAS. In some cases you may need a [key](https://en.wikipedia.org/wiki/Application_programming_interface_key) to perform a call. More APIs can be found at https://apilist.fun/ and https://github.com/toddmotto/public-apis. Your catalog may have one too!**
 
