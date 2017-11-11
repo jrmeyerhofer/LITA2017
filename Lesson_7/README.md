@@ -135,9 +135,9 @@ var userList = new List('books', options);
 </html>
 
 ```
-10. Save your file to your Desktop. 
-11. Copy the values from F2:F7 in your Google Sheet into the UL list object where it says "LIST INDEX HERE". 
-12. Save and then open the file in a browser. You should see a nice new book list:
+10. Save your file as 'index.html'. 
+11. Copy the values from F2:F7 in your Google Sheet into the UL list object of our new HTML document where it says "LIST INDEX HERE". 
+12. Save and then open the HTML file in a browser. You should see a nice new book list:
 ![Image of final new book list](booklist.png)
 13. Test the New Book List by clicking on the sort and searching for 'oval'.
 14. **Exercise (10 min):** Add another row to your data set in the Google Sheet. Manually create the data (don't worry about scraping a website for an image file), and refresh your web page.
