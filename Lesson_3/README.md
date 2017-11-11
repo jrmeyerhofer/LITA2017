@@ -1,6 +1,6 @@
 # Lesson 3 - Create custom menus
 
-In this lesson we'll create a custom menu and a clickable button and image in a Google Sheet.
+In this lesson we'll create a custom menu, a clickable button, and a clickable image in a Google Sheet.
 
 ## Lesson Steps
 
