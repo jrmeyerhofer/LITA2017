@@ -79,7 +79,7 @@ function onOpen() {
   	.addToUi();
 }
 ```
-6. This is the code we created from Lesson 6 but changed a little for this lesson. 
+6. This is nearly the same code we created from Lesson 6 but changed a little for this lesson. 
 7. Save. *[Remember you may have to authorize your script.](../authorize.md)* Then manually run the onOpen function to create the menu.
 8. Now you can run the custom menu function, Scrape the Web, to get the image and record URL. This is just like Lesson 6, we are just changing the formatting.<br /><br />
 ![Image of Image Data](just_images.png)
