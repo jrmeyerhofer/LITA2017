@@ -105,7 +105,7 @@ We then put that JSON string in the A3 cell.
     var cell = sheet.getRange("A3");
     cell.setValue(response);
 ```
-Finally, we navigate the JSON file, and get the value of the doi and put it in cell B5.
+Finally, we navigate the JSON string, and get the value of the doi and put it in cell B5.
 ```javascript
     if ('doi' in data['results'][0]) {
       var doi = data['results'][0]['doi'];
