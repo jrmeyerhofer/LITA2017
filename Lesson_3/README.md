@@ -32,7 +32,7 @@ function buttonClick() {
      .alert('You clicked the button!');
 }
 ```
-5. Save and name your script. *[Remember you may have to authorize your script.](../authorize.md)* This code will add a custom menu to our sheet with a menu item and a sub-menu. You can see where it designates the name and then the function that will run when that menu is clicked. 
+5. Save and name your script. *[Remember you may have to authorize your script.](../authorize.md)* This code will add a custom menu to our sheet with a menu item and a sub-menu. You can see where it designates the name and the function that will run when that menu is clicked. 
 6. Manually run the onOpen() function. *Note: onOpen() is a special function called a simple trigger and will normally run when a user opens a spreadsheet, document, or form.* If you look at your sheet, you will now have a new menu.<br /><br />
 ![Image of Menu](custom_menu.png)
 7. Click on one of the menus and it will run the appropriate function - *menuOne() or menuTwo()*:<br /><br />
