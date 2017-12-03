@@ -33,3 +33,14 @@ Main GAS documentation: https://developers.google.com/apps-script/
 Creating custom functions: https://developers.google.com/apps-script/guides/sheets/functions#using_a_custom_function
 
 Bound script: https://developers.google.com/apps-script/guides/bound
+
+## Lessons
+
+[Lesson 1 - Getting Orientated](/Lesson_1/) **(PREVIOUS)**<br />
+[Lesson 2 - Create your own function](/Lesson_2/)<br />
+[Lesson 3 - Create a custom menu](/Lesson_3/) **(NEXT)**<br />
+[Lesson 4 - Sidebar](/Lesson_4/)<br />
+[Lesson 5 - Calling APIs](/Lesson_5/)<br />
+[Lesson 6 - Scraping the web](/Lesson_6/)<br />
+[Lesson 7 - Building a New Book page](/Lesson_7/)<br />
+[Lesson 8 - Web App](/Lesson_8/)
