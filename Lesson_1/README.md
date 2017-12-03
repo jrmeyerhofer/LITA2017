@@ -60,3 +60,5 @@ Information about Troubleshooting/Debugger: https://developers.google.com/apps-s
 GAS authorization: https://developers.google.com/apps-script/guides/services/authorization
 
 Quotas for Google Services: https://developers.google.com/apps-script/guides/services/quotas
+
+[Next Lesson](Lesson_2)
