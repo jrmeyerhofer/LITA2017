@@ -135,3 +135,15 @@ Main GAS documentation: https://developers.google.com/apps-script/
 External APIs: https://developers.google.com/apps-script/guides/services/external
 
 UrlFetchApp: https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app
+
+## Lessons
+
+[Lesson 1 - Getting Orientated](/Lesson_1/)<br />
+[Lesson 2 - Create your own function](/Lesson_2/)<br />
+[Lesson 3 - Create a custom menu](/Lesson_3/)<br />
+[Lesson 4 - Sidebar](/Lesson_4/) **(PREVIOUS)**<br />
+[Lesson 5 - Calling APIs](/Lesson_5/)<br />
+[Lesson 6 - Scraping the web](/Lesson_6/) **(NEXT)**<br />
+[Lesson 7 - Building a New Book page](/Lesson_7/)<br />
+[Lesson 8 - Web App](/Lesson_8/)
+
