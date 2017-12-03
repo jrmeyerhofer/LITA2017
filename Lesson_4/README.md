@@ -41,3 +41,14 @@ Class Ui: https://developers.google.com/apps-script/reference/base/ui
 
 Class google.script.host (Client-side API): https://developers.google.com/apps-script/guides/html/reference/host
 
+## Lessons
+
+[Lesson 1 - Getting Orientated](/Lesson_1/)<br />
+[Lesson 2 - Create your own function](/Lesson_2/)<br />
+[Lesson 3 - Create a custom menu](/Lesson_3/) **(PREVIOUS)**<br />
+[Lesson 4 - Sidebar](/Lesson_4/)<br />
+[Lesson 5 - Calling APIs](/Lesson_5/) **(NEXT)**<br />
+[Lesson 6 - Scraping the web](/Lesson_6/)<br />
+[Lesson 7 - Building a New Book page](/Lesson_7/)<br />
+[Lesson 8 - Web App](/Lesson_8/)
+
