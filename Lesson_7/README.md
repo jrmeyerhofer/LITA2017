@@ -152,3 +152,14 @@ https://docs.google.com/spreadsheets/d/1pQVokR_X-3utnx-7DKEizhxXXk5WdjCBU1MB0ObB
 Main GAS documentation: https://developers.google.com/apps-script/
 
 List.js: http://listjs.com/
+
+## Lessons
+
+[Lesson 1 - Getting Orientated](/Lesson_1/)<br />
+[Lesson 2 - Create your own function](/Lesson_2/)<br />
+[Lesson 3 - Create a custom menu](/Lesson_3/)<br />
+[Lesson 4 - Sidebar](/Lesson_4/)<br />
+[Lesson 5 - Calling APIs](/Lesson_5/)<br />
+[Lesson 6 - Scraping the web](/Lesson_6/) **(PREVIOUS)**<br />
+[Lesson 7 - Building a New Book page](/Lesson_7/)<br />
+[Lesson 8 - Web App](/Lesson_8/) **(NEXT)**
