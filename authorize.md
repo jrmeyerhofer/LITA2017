@@ -10,7 +10,7 @@ You may see this error about the [app not being verified](https://mashe.hawksey.
 Finally, you allow the script access<br /><br />
 ![Image of Authoization 1](auth3.png)<br /><br />
 
-If your script doesn't seem to be working, save or close and open your file to trigger the authorization process.
+If your script doesn't seem to be working, save or close and open your file again to trigger the authorization process.
 You may have to re-authorize your script if there have been a lot of changes.
 
 ## Resources
